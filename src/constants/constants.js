@@ -1,2 +1,4 @@
-export default NUM_TILES_WIDTH = 50;
-export default NUM_TILES_HEIGHT = 50;
+const NUM_TILES_WIDTH = 50
+const NUM_TILES_HEIGHT = 50
+
+export { NUM_TILES_WIDTH, NUM_TILES_HEIGHT }
