@@ -1,13 +1,12 @@
 import React, { useEffect } from 'react'
 import { Maze } from '../../algorithm/maze'
-import './MazeBackground.css'
+import './MazeBackground.scss'
 
 export default function MazeBackground() {
     const maze = new Maze()
     const canvasRef = React.createRef(null)
     const canvasWidth = window.innerWidth
     const canvasHeight = window.innerHeight
-
 
     useEffect(() => {
         setInterval(renderMazeBackground, 1000 / 60)
@@ -27,9 +26,6 @@ export default function MazeBackground() {
             console.log(canvas.height)
             ctx.fillStyle = 'BLACK'
             ctx.fillRect(100, 100, 100, 100)
-
-            const maxDistance = Math.floor(Math.random() * 5)
-
         }
     }
 

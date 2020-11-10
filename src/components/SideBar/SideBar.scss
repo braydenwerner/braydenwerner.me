@@ -1,0 +1,13 @@
+@import "../../common/constants";
+
+.left {
+  width: 40px;
+  position: fixed;
+  bottom: 0;
+  left: 40px;
+  z-index: 10;
+  color: $color-dark;
+}
+
+.right {
+}

@@ -1,0 +1,35 @@
+@import "../../common/constants";
+
+.social-list {
+  @include center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 90px;
+    margin: 0 auto;
+    background-color: $color-dark;
+  }
+  li {
+    padding: 10px;
+    &:last-child {
+      margin-bottom: 20px;
+    }
+    a {
+      img {
+        width: 32px;
+        height: 32px;
+
+        &:hover,
+        &:focus {
+          transform: translateY(-3px);
+        }
+      }
+    }
+  }
+}

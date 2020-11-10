@@ -4,4 +4,4 @@ const distance = (obj1, obj2) => {
     return Math.sqrt(dx * dx + dy * dy);
 }
 
-export { distance, generateMaze };
+export { distance };
