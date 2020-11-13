@@ -7,16 +7,28 @@
   padding: 0;
   list-style: none;
 
+  &:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: $theme-dark-blue;
+  }
+
   &:after {
     content: "";
     display: block;
     width: 2px;
     height: 90px;
     margin: 0 auto;
-    background-color: $color-dark;
+    background-color: $theme-dark-blue;
   }
   li {
     padding: 10px;
+    &:first-child {
+      margin-top: 20px;
+    }
     &:last-child {
       margin-bottom: 20px;
     }

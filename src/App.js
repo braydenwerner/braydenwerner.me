@@ -1,13 +1,13 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { HomePage } from './windows/exports'
+import { Home } from './windows/exports'
 
 function App() {
   return (
     <Router>
       <Switch>
         <Route exact path="/">
-          <HomePage />
+          <Home />
         </Route>
       </Switch>
     </Router>

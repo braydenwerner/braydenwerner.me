@@ -1,0 +1,25 @@
+@import "../../common/constants";
+
+.landing-section-container {
+  @include center;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+
+  .text-container {
+    width: 450px;
+    height: 450px;
+    h1 {
+      margin-top: 150px;
+    }
+    h2 {
+      color: $theme-red;
+    }
+    p {
+    }
+  }
+}
+
+.landing-paragraph-1 {
+  font-size: 40px;
+}

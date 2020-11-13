@@ -4,9 +4,15 @@ import Cell from './cell'
 
 export class Maze {
     constructor() {
+        this.mazeStates = []
         this.maze = new Array(NUM_TILES_HEIGHT)
         for (let i = 0; i < this.maze.length; i++) {
             this.maze[i] = new Array(NUM_TILES_WIDTH)
+        }
+
+        this.temp = new Array(NUM_TILES_HEIGHT)
+        for (let i = 0; i < this.temp.length; i++) {
+            this.temp[i] = new Array(NUM_TILES_WIDTH)
         }
 
         for (let i = 0; i < NUM_TILES_HEIGHT; i++) {
@@ -23,13 +29,17 @@ export class Maze {
         this.row = Math.floor((Math.random() * NUM_TILES_HEIGHT))
         this.col = Math.floor((Math.random() * NUM_TILES_WIDTH))
 
-        console.log(this.visited)
-
         this.stack = new Stack()
+
+        this.mazeStates = []
+        this.mazeAnimationStates = []
         this.dfs(this.maze, this.visited, this.row, this.col, this.stack)
     }
 
     dfs(maze, visited, row, col, stack) {
+        this.mazeStates.push(this.getMazeState(maze))
+        this.mazeAnimationStates.push(this.getMazeAnimationState(visited))
+
         //  check if edge, add border wall
         if (row === 0) maze[row][col].top = true
         if (row === NUM_TILES_HEIGHT - 1) maze[row][col].bottom = true
@@ -85,5 +95,38 @@ export class Maze {
 
     getMaze() {
         return this.maze
+    }
+
+    getMazeState(maze) {
+        const mazeState = []
+        for (let i = 0; i < maze.length; i++) {
+            for (let j = 0; j < maze[0].length; j++) {
+                mazeState.push({
+                    row: i,
+                    col: j,
+                    top: maze[i][j].top,
+                    bottom: maze[i][j].bottom,
+                    left: maze[i][j].left,
+                    right: maze[i][j].right
+                })
+            }
+        }
+
+        return mazeState
+    }
+
+    getMazeAnimationState(visited) {
+        const mazeAnimationState = []
+        for (let i = 0; i < visited.length; i++) {
+            for (let j = 0; j < visited[0].length; j++) {
+                mazeAnimationState.push({
+                    row: i,
+                    col: j,
+                    visited: visited[i][j]
+                })
+            }
+        }
+
+        return mazeAnimationState
     }
 }

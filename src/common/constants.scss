@@ -1,9 +1,14 @@
 $font-size-large: 1.2rem;
 $font-size-normal: 1rem;
 $font-size-small: 0.8rem;
-$color-dark: #444;
-$color-light: #ddd;
-$theme-color: $color-dark;
+$theme-red: #ba1200;
+$theme-dark-blue: #031927;
+$theme-sky-blue: #9dd1f1;
+$theme-blue: #508aa8;
+$theme-gray: #c8e0f4;
+$screen-small: 400px;
+$screen-medium: 1000px;
+$screen-large: 1400px;
 
 @mixin center {
   display: flex;

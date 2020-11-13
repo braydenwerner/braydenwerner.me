@@ -1,5 +1,9 @@
-const NUM_TILES_WIDTH = 50
-const NUM_TILES_HEIGHT = 50
+import { Maze } from '../algorithm/maze'
+
+const NUM_TILES_WIDTH = 70
+const NUM_TILES_HEIGHT = 30
+
+const maze = new Maze()
 
 const socialLinks = [
     {
@@ -20,4 +24,4 @@ const socialLinks = [
     }
 ]
 
-export { NUM_TILES_WIDTH, NUM_TILES_HEIGHT, socialLinks }
+export { NUM_TILES_WIDTH, NUM_TILES_HEIGHT, socialLinks, maze }
