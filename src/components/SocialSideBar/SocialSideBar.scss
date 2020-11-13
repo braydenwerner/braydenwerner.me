@@ -1,4 +1,4 @@
-@import "../../common/constants";
+@import "../../constants/constants";
 
 .social-list {
   @include center;
@@ -13,7 +13,7 @@
     width: 2px;
     height: 100vh;
     margin: 0 auto;
-    background-color: $theme-dark-blue;
+    background-color: $themeBlueBackground;
   }
 
   &:after {
@@ -22,7 +22,7 @@
     width: 2px;
     height: 90px;
     margin: 0 auto;
-    background-color: $theme-dark-blue;
+    background-color: $themeBlueBackground;
   }
   li {
     padding: 10px;

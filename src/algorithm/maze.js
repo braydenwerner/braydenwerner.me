@@ -32,13 +32,11 @@ export class Maze {
         this.stack = new Stack()
 
         this.mazeStates = []
-        this.mazeAnimationStates = []
         this.dfs(this.maze, this.visited, this.row, this.col, this.stack)
     }
 
     dfs(maze, visited, row, col, stack) {
         this.mazeStates.push(this.getMazeState(maze))
-        this.mazeAnimationStates.push(this.getMazeAnimationState(visited))
 
         //  check if edge, add border wall
         if (row === 0) maze[row][col].top = true
@@ -113,20 +111,5 @@ export class Maze {
         }
 
         return mazeState
-    }
-
-    getMazeAnimationState(visited) {
-        const mazeAnimationState = []
-        for (let i = 0; i < visited.length; i++) {
-            for (let j = 0; j < visited[0].length; j++) {
-                mazeAnimationState.push({
-                    row: i,
-                    col: j,
-                    visited: visited[i][j]
-                })
-            }
-        }
-
-        return mazeAnimationState
     }
 }

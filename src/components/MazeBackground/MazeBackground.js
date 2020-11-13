@@ -1,19 +1,29 @@
-import React, { useEffect } from 'react'
-import { maze, NUM_TILES_HEIGHT, NUM_TILES_WIDTH } from '../../constants/constants'
+import React, { useEffect, useState } from 'react'
+import { maze, NUM_TILES_HEIGHT, NUM_TILES_WIDTH, colors } from '../../constants/constants'
 import './MazeBackground.scss'
 import PropTypes from 'prop-types'
-
-let mazeStateIndex = 0
-let mazeInterval
-
-let mazeAnimationInterval
-let mazeAnimationIndex = 0
+import { generateDiagonalWaveTraversal } from '../../util'
 
 export default function MazeBackground({ width, height }) {
     const canvasRef = React.createRef(null)
 
-    const tileWidth = (width + 1) / NUM_TILES_WIDTH
-    const tileHeight = (height) / NUM_TILES_HEIGHT
+    const tileWidth = width / NUM_TILES_WIDTH
+    const tileHeight = height / NUM_TILES_HEIGHT
+
+    const mazeGenerationSpeed = 10
+    let mazeStateIndex = 0
+    let mazeInterval
+
+    // const maxAnimationDelay = 0
+    let mazeAnimationInterval
+    // let animationDelay = 0
+    // let upToHeight = 0
+    // let upToWidth = 0
+
+    const order = generateDiagonalWaveTraversal(NUM_TILES_WIDTH, NUM_TILES_HEIGHT)
+    console.log(order)
+
+    const [canvasDisplay, setCanvasDisplay] = useState(true)
 
     useEffect(() => {
         mazeInterval = setInterval(renderMazeBackground, 1)
@@ -23,23 +33,23 @@ export default function MazeBackground({ width, height }) {
         const canvas = canvasRef.current
         const currentMaze = maze.mazeStates[mazeStateIndex]
 
-        mazeStateIndex += 16
+        //  10
+        mazeStateIndex += mazeGenerationSpeed
         if (mazeStateIndex >= maze.mazeStates.length) {
             mazeStateIndex = maze.mazeStates.length - 1
-
-            mazeAnimationInterval = setInterval(renderFinishedMazeAnimation, 1)
-            clearInterval(mazeInterval)
         }
 
         if (canvas && maze) {
             const ctx = canvas.getContext('2d')
-            ctx.fillStyle = 'WHITE'
+            ctx.fillStyle = colors.themeBlueForeground
             ctx.fillRect(0, 0, width, height)
             for (let i = 0; i < currentMaze.length; i++) {
                 if (currentMaze[i].left) {
                     ctx.beginPath()
                     ctx.moveTo(currentMaze[i].col * tileWidth, currentMaze[i].row * tileHeight)
                     ctx.lineTo(currentMaze[i].col * tileWidth, currentMaze[i].row * tileHeight, tileHeight)
+                    ctx.lineWidth = 4
+                    ctx.strokeStyle = colors.themeGreen
                     ctx.stroke()
                 }
 
@@ -65,37 +75,30 @@ export default function MazeBackground({ width, height }) {
                 }
             }
         }
+
+        if (mazeStateIndex === maze.mazeStates.length - 1) {
+            mazeAnimationInterval = setInterval(renderFinishedMazeAnimation, 1)
+            clearInterval(mazeInterval)
+        }
     }
 
     function renderFinishedMazeAnimation() {
         const canvas = canvasRef.current
         if (!canvas) return
-        const ctx = canvas.getContext('2d')
-        const currentMaze = maze.mazeAnimationStates[mazeAnimationIndex]
-        ctx.fillStyle = 'WHITE'
-        ctx.fillRect(0, 0, width, height)
+        //  const ctx = canvas.getContext('2d')
 
-        ctx.fillStyle = '#508aa8'
-        for (let i = 0; i < currentMaze.length; i++) {
-            if (currentMaze[i].visited) {
-                ctx.fillRect(currentMaze[i].col * tileWidth, currentMaze[i].row * tileHeight, tileWidth + 1, tileHeight + 1)
-            }
-        }
-
-        mazeAnimationIndex += 18
-        if (mazeAnimationIndex >= maze.mazeAnimationStates.length) {
-            if (mazeAnimationIndex === maze.mazeAnimationStates.length - 1) {
-                clearInterval(mazeAnimationInterval)
-            }
-
-            mazeAnimationIndex = maze.mazeAnimationStates.length - 1
-        }
+        clearInterval(mazeAnimationInterval)
+        setCanvasDisplay(false)
     }
 
     return (
-        <div>
-            <canvas className='maze-canvas' ref={canvasRef} width={width} height={height} ></canvas>
-        </div>
+        <>
+            {canvasDisplay && (
+                <div>
+                    <canvas className='maze-canvas' ref={canvasRef} width={width} height={height}></canvas>
+                </div>
+            )}
+        </>
     )
 }
 
