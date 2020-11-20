@@ -7,7 +7,7 @@ export default function LandingSection() {
             <div className='landing-section-container'>
                 <div className='text-container'>
                     <h1>Brayden Werner</h1>
-                    <h2>Balls</h2>
+                    <h2>Software Engineer</h2>
                 </div>
             </div>
         </>

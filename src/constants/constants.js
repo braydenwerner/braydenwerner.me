@@ -8,8 +8,8 @@ const socialLinks = [
         url: 'https://www.linkedin.com/in/brayden-werner-6908a0141/'
     },
     {
-        name: 'Instagram',
-        url: ''
+        name: 'Youtube',
+        url: 'https://www.youtube.com/channel/UCqeUabWTGM4y1cdABffFDCA'
     },
     {
         name: 'Email',
@@ -17,12 +17,12 @@ const socialLinks = [
     }
 ]
 
-const ANIMATION_DELAY = 3500
+const ANIMATION_DELAY = 500
 
 const colors = {
     themeBlueForeground: '#292D3E',
     themeBlueBackground: '#1B1E2B',
-    themeGreen: '#C3E88D',
+    themeGreen: '#285943',
     themeRed: '#CE392B',
     themePurple: '#C777A7',
     themeYellow: 'FFCB6B',

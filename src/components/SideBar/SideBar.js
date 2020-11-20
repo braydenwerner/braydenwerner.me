@@ -14,7 +14,7 @@ export default function SideBar({ children, location }) {
     return (
         <>
             {isMounted && (
-                < div className={location} >
+                <div className={location} >
                     {children}
                 </div>
             )}

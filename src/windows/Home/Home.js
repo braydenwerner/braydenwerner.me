@@ -4,9 +4,12 @@ import { LandingSection, SocialSideBar, Background } from '../../components/expo
 export default function HomePage() {
     return (
         <>
-            <Background />
             <SocialSideBar />
-            <LandingSection />
+
+            <Layout>
+                <Background />
+                <LandingSection />
+            </Layout>
         </>
     )
 }

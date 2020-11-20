@@ -1,20 +1,27 @@
 @import "../../constants/constants";
-
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Vollkorn:wght@800&display=swap");
 .landing-section-container {
   @include center;
   flex-direction: column;
   min-height: 100vh;
-  text-align: center;
-  background-color: $themeBlueForeground;
+  align-items: flex-start;
+  background-color: $themeBlack;
 
   .text-container {
-    width: 450px;
-    height: 450px;
     h1 {
-      margin-top: 150px;
+      margin: 0 0 30px 4px;
+      font-family: "Vollkorn", serif;
+      color: $themeRed;
+      font-size: 50px;
+
+      @media (max-width: 480px) {
+        margin: 0 0 20px 2px;
+      }
     }
     h2 {
-      color: $themeRed;
+      color: $themeLightYellow;
+      font-family: "Archivo", sans-serif;
+      font-weight: 600;
     }
     p {
     }

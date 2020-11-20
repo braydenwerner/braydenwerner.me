@@ -16,6 +16,18 @@
 }
 
 .right {
+  width: 40px;
+  position: fixed;
+  bottom: 0;
+  right: 40px;
+  z-index: 10;
+  animation-name: fade-in;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+
+  @media screen and (max-width: $screen-medium) {
+    display: none;
+  }
 }
 
 @keyframes fade-in {
