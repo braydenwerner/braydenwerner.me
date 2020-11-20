@@ -14,14 +14,10 @@ export default function MazeBackground({ width, height }) {
     let mazeStateIndex = 0
     let mazeInterval
 
-    // const maxAnimationDelay = 0
+    const mazeAnimationSpeed = 7
+    let mazeAnimationIndex = 0
     let mazeAnimationInterval
-    // let animationDelay = 0
-    // let upToHeight = 0
-    // let upToWidth = 0
-
     const order = generateDiagonalWaveTraversal(NUM_TILES_WIDTH, NUM_TILES_HEIGHT)
-    console.log(order)
 
     const [canvasDisplay, setCanvasDisplay] = useState(true)
 
@@ -33,7 +29,6 @@ export default function MazeBackground({ width, height }) {
         const canvas = canvasRef.current
         const currentMaze = maze.mazeStates[mazeStateIndex]
 
-        //  10
         mazeStateIndex += mazeGenerationSpeed
         if (mazeStateIndex >= maze.mazeStates.length) {
             mazeStateIndex = maze.mazeStates.length - 1
@@ -85,10 +80,23 @@ export default function MazeBackground({ width, height }) {
     function renderFinishedMazeAnimation() {
         const canvas = canvasRef.current
         if (!canvas) return
-        //  const ctx = canvas.getContext('2d')
+        const ctx = canvas.getContext('2d')
 
-        clearInterval(mazeAnimationInterval)
-        setCanvasDisplay(false)
+        mazeAnimationIndex += mazeAnimationSpeed
+        if (mazeAnimationIndex >= NUM_TILES_WIDTH * NUM_TILES_HEIGHT) {
+            mazeAnimationIndex = NUM_TILES_WIDTH * NUM_TILES_HEIGHT
+        }
+
+        ctx.fillStyle = colors.themeBlueForeground
+        for (let i = 0; i < mazeAnimationIndex; i++) {
+            ctx.fillRect(order[i].col * tileWidth, order[i].row * tileHeight, tileWidth, tileHeight)
+        }
+
+        console.log(mazeAnimationIndex)
+        if (mazeAnimationIndex === NUM_TILES_WIDTH * NUM_TILES_HEIGHT) {
+            clearInterval(mazeAnimationInterval)
+            setCanvasDisplay(false)
+        }
     }
 
     return (

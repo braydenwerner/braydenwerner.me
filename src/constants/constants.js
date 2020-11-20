@@ -1,10 +1,3 @@
-import { Maze } from '../algorithm/maze'
-
-const NUM_TILES_WIDTH = 50
-const NUM_TILES_HEIGHT = 30
-
-const maze = new Maze()
-
 const socialLinks = [
     {
         name: 'GitHub',
@@ -36,4 +29,4 @@ const colors = {
     themeGray: 'A6ACB2'
 }
 
-export { NUM_TILES_WIDTH, NUM_TILES_HEIGHT, socialLinks, maze, ANIMATION_DELAY, colors }
+export { socialLinks, ANIMATION_DELAY, colors }

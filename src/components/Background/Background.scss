@@ -1,1 +1,5 @@
-@import "../../common/constants";
+@import "../../constants/constants";
+
+.background {
+  background-color: $themeBlueForeground;
+}
