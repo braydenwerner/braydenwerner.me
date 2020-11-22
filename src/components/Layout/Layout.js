@@ -1,9 +1,22 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+import { SocialSideBar } from '../exports'
+import './Layout.scss'
 
 export default function Layout({ children }) {
     return (
-        <div>
+        <>
+            <div className="components">
+                <SocialSideBar />
 
-        </div>
+                <div className="main-sections">
+                    {children}
+                </div>
+            </div>
+        </>
     )
+}
+
+Layout.propTypes = {
+    children: PropTypes.node.isRequired
 }

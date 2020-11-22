@@ -1,33 +1,96 @@
 @import "../../constants/constants";
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Vollkorn:wght@800&display=swap");
 .landing-section-container {
-  @include center;
-  flex-direction: column;
+  display: flex;
+  align-items: center;
   min-height: 100vh;
-  align-items: flex-start;
-  background-color: $themeBlack;
 
-  .text-container {
+  .name-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 350px;
+
+    @media (max-width: 1280px) {
+      left: 200px;
+    }
+
+    @media (max-width: 1280px) {
+      left: 100px;
+    }
+
+    @media (max-width: 825px) {
+      left: 50px;
+    }
+
+    @media (max-width: 710px) {
+      left: 10px;
+    }
+
     h1 {
-      margin: 0 0 30px 4px;
+      position: relative;
+      animation-name: appear;
+      animation-duration: 1s;
       font-family: "Vollkorn", serif;
       color: $themeRed;
-      font-size: 50px;
+      font-size: 80px;
+      margin: 0;
 
-      @media (max-width: 480px) {
-        margin: 0 0 20px 2px;
+      @media (max-width: 710px) {
+        font-size: 60px;
+      }
+
+      @media (max-width: 500px) {
+        font-size: 40px;
       }
     }
     h2 {
+      position: relative;
+      animation-name: appear;
+      animation-duration: 1.5s;
+      margin-top: 5px;
+      color: $themeLightYellow;
+      font-family: "Archivo", sans-serif;
+      font-size: 50px;
+      font-weight: 600;
+
+      @media (max-width: 710px) {
+        font-size: 30px;
+      }
+
+      @media (max-width: 500px) {
+        font-size: 25px;
+      }
+    }
+    p {
+      position: relative;
+      animation-name: appear;
+      animation-duration: 2s;
       color: $themeLightYellow;
       font-family: "Archivo", sans-serif;
       font-weight: 600;
-    }
-    p {
+
+      @media (max-width: 710px) {
+        font-size: 20px;
+      }
     }
   }
 }
 
-.landing-paragraph-1 {
-  font-size: 40px;
+.paragraph-container {
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0%;
+    top: 50px;
+  }
+
+  50% {
+    opacity: 100%;
+  }
+
+  100% {
+    top: 0px;
+  }
 }

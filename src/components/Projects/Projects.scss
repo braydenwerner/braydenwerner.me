@@ -1,0 +1,16 @@
+@import "../../constants/constants";
+
+.outer-container {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .inner-container {
+    width: 60%;
+
+    .main-header {
+      font-size: 50px;
+    }
+  }
+}
