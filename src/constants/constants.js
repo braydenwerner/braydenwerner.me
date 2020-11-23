@@ -22,17 +22,23 @@ const socialLinks = [
 const projectLinks = [
     {
         name: 'Long Chess',
+        description: `A multiplayer online chess website featuring three different chess related game modes.
+                      Create a room and play with your friends!`,
         url: 'https://github.com/braydenwerner/Long-Chess',
         gif: longChessGif,
         tags: ['Websockets', 'Game Logic', 'Multiplayer Online', 'Node.js', 'Express.js']
     },
     {
         name: 'Periodic Galaxy',
+        description: `A space themed IO game. Fly around several unique spaceships in an fast-paced, real time battlefield.
+                      Don't forget to login in with google to save your in-game kills.`,
         url: 'https://github.com/braydenwerner/Periodic-Galaxy',
         tags: ['Websockets', 'SQL', 'Google Login API', 'Multiplayer Online', 'Node.js', 'Express.js']
     },
     {
         name: 'Maze Generation Visualizer',
+        description: `A tool to visualize how a simple maze generation algorithm works. Customize the dimensions of the maze
+                      or the speed of the generation to your liking.`,
         url: 'https://github.com/braydenwerner/Maze-Generation-Visualization',
         tags: ['Algorithms', 'Data Structures', 'Visualization']
     }

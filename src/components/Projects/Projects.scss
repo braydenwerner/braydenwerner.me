@@ -51,17 +51,37 @@
         background-color: white;
         width: 75%;
 
-        .project-title {
-        }
+        .column-wrapper {
+          display: flex;
+          flex-direction: row;
 
-        .project-url {
-        }
+          .project-column-1 {
+            .project-title {
+            }
 
-        .project-gif {
-          width: 350px;
-        }
+            .project-description-container {
+              background-color: orange;
 
-        .project-tags {
+              .project-description {
+                font-size: 15px;
+              }
+            }
+
+            .project-url {
+            }
+
+            .project-tags {
+              &:last-child {
+                margin-bottom: 50px;
+              }
+            }
+          }
+
+          .project-column-2 {
+            .project-gif {
+              width: 100%;
+            }
+          }
         }
       }
     }
