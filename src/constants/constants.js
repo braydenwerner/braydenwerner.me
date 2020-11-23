@@ -17,6 +17,21 @@ const socialLinks = [
     }
 ]
 
+const projectLinks = [
+    {
+        name: 'Long Chess',
+        url: 'https://github.com/braydenwerner/Long-Chess'
+    },
+    {
+        name: 'Periodic Galaxy',
+        url: 'https://github.com/braydenwerner/Periodic-Galaxy'
+    },
+    {
+        name: 'Maze Generation Visualizer',
+        url: 'https://github.com/braydenwerner/Maze-Generation-Visualization'
+    }
+]
+
 const ANIMATION_DELAY = 500
 
 const colors = {
@@ -29,4 +44,4 @@ const colors = {
     themeGray: 'A6ACB2'
 }
 
-export { socialLinks, ANIMATION_DELAY, colors }
+export { socialLinks, projectLinks, ANIMATION_DELAY, colors }

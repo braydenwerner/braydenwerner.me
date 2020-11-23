@@ -1,4 +1,5 @@
 @import "../../constants/constants";
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Vollkorn:wght@800&display=swap");
 
 .outer-container {
   margin-top: 150px;
@@ -6,35 +7,56 @@
   flex-direction: column;
   align-items: center;
 
-  .main-header-container {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    width: 50%;
+  .main-container {
+    width: 60%;
 
-    &:before {
-      content: "";
-      margin-top: 30px;
-      margin-right: 10px;
-      display: block;
-      width: 20%;
-      height: 2px;
-      background-color: $themeWhite;
+    .title-container {
+      font-family: "Vollkorn", serif;
+      font-weight: 100;
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+
+      &:before {
+        content: "";
+        margin-top: 30px;
+        margin-right: 10px;
+        display: block;
+        width: 20%;
+        height: 2px;
+        background-color: $themeWhite;
+      }
+
+      &:after {
+        content: "";
+        margin-top: 30px;
+        margin-left: 10px;
+        display: block;
+        width: 70%;
+        height: 2px;
+        background-color: $themeWhite;
+      }
+
+      .title {
+        font-size: 50px;
+        color: $themeRed;
+      }
     }
+    .project-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-    &:after {
-      content: "";
-      margin-top: 30px;
-      margin-left: 10px;
-      display: block;
-      width: 70%;
-      height: 2px;
-      background-color: $themeWhite;
-    }
+      .project-background {
+        background-color: white;
+        width: 75%;
 
-    .title {
-      font-size: 50px;
-      color: $themeRed;
+        .project-title {
+        }
+
+        .project-url {
+        }
+      }
     }
   }
 }
