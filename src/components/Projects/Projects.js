@@ -5,6 +5,7 @@ import './Projects.scss'
 
 export default function Projects() {
     //  play gif on hover?
+    let tagKeyIndex = 0
     return (
         <>
             <div className="outer-container">
@@ -19,11 +20,20 @@ export default function Projects() {
                             return (
                                 <div className="project-background" key={project.name}>
                                     <div className="project-title">{project.name}</div>
-                                    <div className="project-url">{project.url}</div>
+                                    <a className="project-url" href={project.url} aria-label={name} target="_blank" rel="noreferrer">Github</a>
+                                    {project.gif && (
+                                        <img className="project-gif" alt="loading" src={project.gif}></img>
+                                    )}
+                                    <div className="project-tags">
+                                        {project.tags.map(tag => {
+                                            return (
+                                                <li key={++tagKeyIndex} className="project-tags">{tag}</li>
+                                            )
+                                        })}
+                                    </div>
                                 </div>
                             )
-                        })
-                        }
+                        })}
                     </div>
                 </div>
             </div>

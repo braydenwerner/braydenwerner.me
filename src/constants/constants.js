@@ -1,3 +1,5 @@
+import longChessGif from '../gif/long-chess.gif'
+
 const socialLinks = [
     {
         name: 'GitHub',
@@ -20,15 +22,19 @@ const socialLinks = [
 const projectLinks = [
     {
         name: 'Long Chess',
-        url: 'https://github.com/braydenwerner/Long-Chess'
+        url: 'https://github.com/braydenwerner/Long-Chess',
+        gif: longChessGif,
+        tags: ['Websockets', 'Game Logic', 'Multiplayer Online', 'Node.js', 'Express.js']
     },
     {
         name: 'Periodic Galaxy',
-        url: 'https://github.com/braydenwerner/Periodic-Galaxy'
+        url: 'https://github.com/braydenwerner/Periodic-Galaxy',
+        tags: ['Websockets', 'SQL', 'Google Login API', 'Multiplayer Online', 'Node.js', 'Express.js']
     },
     {
         name: 'Maze Generation Visualizer',
-        url: 'https://github.com/braydenwerner/Maze-Generation-Visualization'
+        url: 'https://github.com/braydenwerner/Maze-Generation-Visualization',
+        tags: ['Algorithms', 'Data Structures', 'Visualization']
     }
 ]
 
