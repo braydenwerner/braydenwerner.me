@@ -5,10 +5,11 @@ export default function Projects() {
     return (
         <>
             <div className="outer-container">
-                <div className="inner-container">
-                    <div className="main-header">Projects</div>
+                <div className="main-header-container">
+                    <div className="title">Projects</div>
                 </div>
             </div>
+
         </>
     )
 }

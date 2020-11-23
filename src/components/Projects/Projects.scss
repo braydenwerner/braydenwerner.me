@@ -6,11 +6,35 @@
   flex-direction: column;
   align-items: center;
 
-  .inner-container {
-    width: 60%;
+  .main-header-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 50%;
 
-    .main-header {
+    &:before {
+      content: "";
+      margin-top: 30px;
+      margin-right: 10px;
+      display: block;
+      width: 20%;
+      height: 2px;
+      background-color: $themeWhite;
+    }
+
+    &:after {
+      content: "";
+      margin-top: 30px;
+      margin-left: 10px;
+      display: block;
+      width: 70%;
+      height: 2px;
+      background-color: $themeWhite;
+    }
+
+    .title {
       font-size: 50px;
+      color: $themeRed;
     }
   }
 }
