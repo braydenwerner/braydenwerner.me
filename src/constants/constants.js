@@ -25,14 +25,15 @@ const projectLinks = [
     {
         name: 'Long Chess',
         description: `A multiplayer online chess website featuring three different chess related game modes.
-                      Create a room and play with your friends!`,
+                      Create a room and play with a friend!`,
         url: 'https://github.com/braydenwerner/Long-Chess',
         vid: longChessMP4,
         tags: ['Websockets', 'Node.js', 'Express.js']
     },
     {
         name: 'Periodic Galaxy',
-        description: 'A space themed IO game. Fly around in several unique spaceships in an fast-paced, real time battlefield.',
+        description: `A space themed IO game. Fly around in several unique spaceships in an fast-paced, real time battlefield.
+        Login with your google account to save you in-game kills.`,
         url: 'https://github.com/braydenwerner/Periodic-Galaxy',
         vid: pgioMP4,
         tags: ['Websockets', 'SQL', 'Node.js', 'Express.js', 'Google Login API']
