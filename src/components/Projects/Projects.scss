@@ -8,7 +8,7 @@
   align-items: center;
 
   .main-container {
-    width: 850px;
+    width: 900px;
 
     @media (max-width: 920px) {
       width: 50%;
@@ -63,7 +63,7 @@
           display: flex;
           flex-direction: row;
 
-          @media (max-width: 965px) {
+          @media (max-width: 1050px) {
             align-items: center;
             flex-direction: column;
           }
@@ -71,12 +71,17 @@
           .project-column-1 {
             display: flex;
             flex-direction: column;
-            width: 425px;
+            width: 550px;
+
+            position: relative;
+            right: -100px;
+            z-index: 2;
 
             @media (max-width: 920px) {
               width: 50%;
+              right: 0;
             }
-            @media (max-width: 965px) {
+            @media (max-width: 1050) {
               width: 85%;
             }
             @media (max-width: 700px) {
@@ -87,6 +92,7 @@
               display: flex;
               flex-direction: row;
               background-color: blue;
+              margin-top: 80px;
 
               .project-title {
                 margin: 0 10px 0 10px;
@@ -94,7 +100,6 @@
               }
 
               .project-url {
-                position: relative;
                 font-size: 30px;
                 color: white;
               }
@@ -103,23 +108,26 @@
             .project-description-container {
               position: relative;
               background-color: orange;
+              position: relative;
 
               .project-description {
                 margin-left: 10px;
                 margin-right: 10px;
-                font-size: 15px;
+                font-size: 20px;
               }
             }
           }
 
           .project-column-2 {
-            width: 425px;
+            width: 650px;
+            position: relative;
+            z-index: 1;
 
             background-color: green;
             @media (max-width: 920px) {
               width: 50%;
             }
-            @media (max-width: 965px) {
+            @media (max-width: 1050) {
               margin-top: 10px;
               width: 85%;
             }
@@ -129,6 +137,8 @@
             }
 
             .project-gif {
+              position: relative;
+              right: 95px;
               width: 100%;
             }
           }
@@ -141,6 +151,7 @@
         list-style: none;
         flex-wrap: wrap;
         background-color: red;
+        position: relative;
 
         .tag {
           margin: 10px 10px 10px 10px;

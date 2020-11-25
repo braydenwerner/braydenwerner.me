@@ -7,7 +7,7 @@
   justify-content: center;
 
   .name-container {
-    width: 850px;
+    width: 900px;
 
     @media (max-width: 920px) {
       width: 50%;
@@ -20,11 +20,12 @@
     }
 
     h1 {
+      position: relative;
       animation-name: appear;
       animation-duration: 1s;
       font-family: "Vollkorn", serif;
       color: $themeRed;
-      font-size: 90px;
+      font-size: 100px;
       margin: 0;
 
       @media (max-width: 710px) {
@@ -43,7 +44,7 @@
       margin-top: 5px;
       color: $themeLightYellow;
       font-family: "Archivo", sans-serif;
-      font-size: 50px;
+      font-size: 60px;
       font-weight: 600;
 
       @media (max-width: 710px) {
@@ -62,6 +63,7 @@
       color: $themeLightYellow;
       font-family: "Archivo", sans-serif;
       font-weight: 600;
+      font-size: 20px;
 
       @media (max-width: 710px) {
         font-size: 20px;

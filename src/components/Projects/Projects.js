@@ -16,7 +16,7 @@ export default function Projects() {
                         </div>
                     </Slide>
                     <div className="project-container">
-                        {projectLinks.map(({ name, description, url, gif, tags }, i) => {
+                        {projectLinks.map(({ name, description, url, gif, tags }) => {
                             return (
                                 <div className="project-background" key={name}>
                                     <div className="column-wrapper">
@@ -29,7 +29,6 @@ export default function Projects() {
                                             </div>
                                             <div className="project-description-container">
                                                 <h2 className="project-description">{description}</h2>
-
                                             </div>
                                             <div className="project-tags">
                                                 {tags.map((tag, i) => {
