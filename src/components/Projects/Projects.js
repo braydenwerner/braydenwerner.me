@@ -6,6 +6,11 @@ import './Projects.scss'
 
 export default function Projects() {
     //  play gif on hover?
+    projectLinks.map(p => {
+        console.log(p.vid)
+        return 0
+    })
+
     return (
         <>
             <div className="outer-container">
@@ -16,7 +21,7 @@ export default function Projects() {
                         </div>
                     </Slide>
                     <div className="project-container">
-                        {projectLinks.map(({ name, description, url, gif, tags }) => {
+                        {projectLinks.map(({ name, description, url, vid, tags }) => {
                             return (
                                 <div className="project-background" key={name}>
                                     <div className="column-wrapper">
@@ -39,8 +44,10 @@ export default function Projects() {
                                             </div>
                                         </div>
                                         <div className="project-column-2">
-                                            {gif && (
-                                                <img className="project-gif" alt="loading" src={gif}></img>
+                                            {vid && (
+                                                <video className="project-vid" autoPlay loop muted >
+                                                    <source src={vid} type="video/mp4"></source>
+                                                </video>
                                             )}
                                         </div>
                                     </div>
