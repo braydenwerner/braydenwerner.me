@@ -26,14 +26,14 @@ const projectLinks = [
                       Create a room and play with your friends!`,
         url: 'https://github.com/braydenwerner/Long-Chess',
         gif: longChessGif,
-        tags: ['Websockets', 'Game Logic', 'Multiplayer Online', 'Node.js', 'Express.js']
+        tags: ['Websockets', 'Node.js', 'Express.js']
     },
     {
         name: 'Periodic Galaxy',
         description: `A space themed IO game. Fly around several unique spaceships in an fast-paced, real time battlefield.
                       Don't forget to login in with google to save your in-game kills.`,
         url: 'https://github.com/braydenwerner/Periodic-Galaxy',
-        tags: ['Websockets', 'SQL', 'Google Login API', 'Multiplayer Online', 'Node.js', 'Express.js']
+        tags: ['Websockets', 'SQL', 'Node.js', 'Express.js', 'Google Login API']
     },
     {
         name: 'Maze Generation Visualizer',

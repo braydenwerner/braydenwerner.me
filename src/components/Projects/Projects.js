@@ -1,11 +1,11 @@
 import React from 'react'
 import Slide from 'react-reveal/Slide'
+import { IconImage } from '../exports'
 import { projectLinks } from '../../constants/constants'
 import './Projects.scss'
 
 export default function Projects() {
     //  play gif on hover?
-    let tagKeyIndex = 0
     return (
         <>
             <div className="outer-container">
@@ -16,27 +16,32 @@ export default function Projects() {
                         </div>
                     </Slide>
                     <div className="project-container">
-                        {projectLinks.map(project => {
+                        {projectLinks.map(({ name, description, url, gif, tags }, i) => {
                             return (
-                                <div className="project-background" key={project.name}>
+                                <div className="project-background" key={name}>
                                     <div className="column-wrapper">
                                         <div className="project-column-1">
-                                            <h1 className="project-title">{project.name}</h1>
-                                            <div className="project-description-container">
-                                                <h2 className="project-description">{project.description}</h2>
+                                            <div className="project-title-container">
+                                                <h1 className="project-title">{name}</h1>
+                                                <a className="project-url" href={url} aria-label={name} target="_blank" rel="noreferrer">
+                                                    <IconImage className="github-icon" name="GitHub" />
+                                                </a>
                                             </div>
-                                            <a className="project-url" href={project.url} aria-label={name} target="_blank" rel="noreferrer">Github</a>
+                                            <div className="project-description-container">
+                                                <h2 className="project-description">{description}</h2>
+
+                                            </div>
                                             <div className="project-tags">
-                                                {project.tags.map(tag => {
+                                                {tags.map((tag, i) => {
                                                     return (
-                                                        <li key={++tagKeyIndex} className="project-tags">{tag}</li>
+                                                        <li key={i} className="tag">{tag}</li>
                                                     )
                                                 })}
                                             </div>
                                         </div>
                                         <div className="project-column-2">
-                                            {project.gif && (
-                                                <img className="project-gif" alt="loading" src={project.gif}></img>
+                                            {gif && (
+                                                <img className="project-gif" alt="loading" src={gif}></img>
                                             )}
                                         </div>
                                     </div>

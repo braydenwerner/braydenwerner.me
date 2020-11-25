@@ -8,7 +8,17 @@
   align-items: center;
 
   .main-container {
-    width: 60%;
+    width: 850px;
+
+    @media (max-width: 920px) {
+      width: 50%;
+    }
+    @media (max-width: 965px) {
+      width: 85%;
+    }
+    @media (max-width: 700px) {
+      width: 95%;
+    }
 
     .title-container {
       font-family: "Vollkorn", serif;
@@ -48,40 +58,94 @@
       align-items: center;
 
       .project-background {
-        background-color: white;
-        width: 75%;
-
+        margin-bottom: 70px;
         .column-wrapper {
           display: flex;
           flex-direction: row;
 
+          @media (max-width: 965px) {
+            align-items: center;
+            flex-direction: column;
+          }
+
           .project-column-1 {
-            .project-title {
+            display: flex;
+            flex-direction: column;
+            width: 425px;
+
+            @media (max-width: 920px) {
+              width: 50%;
+            }
+            @media (max-width: 965px) {
+              width: 85%;
+            }
+            @media (max-width: 700px) {
+              width: 95%;
             }
 
-            .project-description-container {
-              background-color: orange;
+            .project-title-container {
+              display: flex;
+              flex-direction: row;
+              background-color: blue;
 
-              .project-description {
-                font-size: 15px;
+              .project-title {
+                margin: 0 10px 0 10px;
+                color: white;
+              }
+
+              .project-url {
+                position: relative;
+                font-size: 30px;
+                color: white;
               }
             }
 
-            .project-url {
-            }
+            .project-description-container {
+              position: relative;
+              background-color: orange;
 
-            .project-tags {
-              &:last-child {
-                margin-bottom: 50px;
+              .project-description {
+                margin-left: 10px;
+                margin-right: 10px;
+                font-size: 15px;
               }
             }
           }
 
           .project-column-2 {
+            width: 425px;
+
+            background-color: green;
+            @media (max-width: 920px) {
+              width: 50%;
+            }
+            @media (max-width: 965px) {
+              margin-top: 10px;
+              width: 85%;
+            }
+            @media (max-width: 700px) {
+              margin-top: 10px;
+              width: 95%;
+            }
+
             .project-gif {
               width: 100%;
             }
           }
+        }
+      }
+
+      .project-tags {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        flex-wrap: wrap;
+        background-color: red;
+
+        .tag {
+          margin: 10px 10px 10px 10px;
+          color: $themeYellow;
+          background-color: black;
         }
       }
     }
