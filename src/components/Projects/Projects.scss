@@ -1,5 +1,6 @@
 @import "../../constants/constants";
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Vollkorn:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&display=swap");
 
 .outer-container {
   margin-top: 150px;
@@ -56,9 +57,10 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin-top: 60px;
 
       .project-background {
-        margin-bottom: 70px;
+        margin-bottom: 90px;
         .column-wrapper {
           display: flex;
           flex-direction: row;
@@ -74,14 +76,14 @@
             width: 550px;
 
             position: relative;
-            right: -100px;
+            right: -50px;
             z-index: 2;
 
             @media (max-width: 920px) {
               width: 50%;
-              right: 0;
             }
-            @media (max-width: 1050) {
+            @media (max-width: 1050px) {
+              right: 0px;
               width: 85%;
             }
             @media (max-width: 700px) {
@@ -91,11 +93,14 @@
             .project-title-container {
               display: flex;
               flex-direction: row;
-              margin-top: 75px;
+              margin-top: 35px;
 
               .project-title {
+                font-family: "Vollkorn", serif;
                 margin: 0 10px 0 10px;
-                color: white;
+                font-size: 35px;
+                color: $themeRed;
+                margin-bottom: 15px;
               }
 
               .project-url {
@@ -106,27 +111,31 @@
 
             .project-description-container {
               position: relative;
-              background-color: rgba(255, 0, 0, 0.6);
+              background-color: rgba(240, 255, 255, 0.6);
               position: relative;
+              background-color: black;
 
               .project-description {
+                color: gray;
+
                 margin-left: 10px;
                 margin-right: 10px;
-                font-size: 20px;
+                font-size: 17px;
+                line-height: 25px;
+                font-family: "Cairo", sans-serif;
               }
             }
           }
 
           .project-column-2 {
             width: 650px;
-            position: relative;
+
             z-index: 1;
 
-            background-color: green;
             @media (max-width: 920px) {
               width: 50%;
             }
-            @media (max-width: 1050) {
+            @media (max-width: 1050px) {
               margin-top: 10px;
               width: 85%;
             }
@@ -137,8 +146,12 @@
 
             .project-vid {
               position: relative;
-              right: 95px;
+              right: 65px;
               width: 100%;
+
+              @media (max-width: 1050px) {
+                right: 0px;
+              }
             }
           }
         }
@@ -150,6 +163,7 @@
         list-style: none;
         flex-wrap: wrap;
         position: relative;
+        font-size: 14.5px;
 
         .tag {
           margin: 10px 10px 10px 10px;

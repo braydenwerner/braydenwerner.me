@@ -32,16 +32,16 @@ const projectLinks = [
     },
     {
         name: 'Periodic Galaxy',
-        description: `A space themed IO game. Fly around in several unique spaceships in an fast-paced, real time battlefield.
-        Login with your google account to save you in-game kills.`,
+        description: `A space themed IO game. Pilot unique spaceships in an fast-paced, real time battlefield.
+        Login with your google account to save your progress.`,
         url: 'https://github.com/braydenwerner/Periodic-Galaxy',
         vid: pgioMP4,
         tags: ['Websockets', 'SQL', 'Node.js', 'Express.js', 'Google Login API']
     },
     {
-        name: 'Maze Generation Visualizer',
-        description: `A tool to visualize how a simple maze generation algorithm works. Customize the dimensions of the maze
-                      or the speed of the generation to your liking.`,
+        name: 'Maze Generator',
+        description: `A customizable tool to visualize how a simple maze generation algorithm behaves.
+        `,
         url: 'https://github.com/braydenwerner/Maze-Generation-Visualization',
         vid: mazeGenerationVidMP4,
         tags: ['Algorithms', 'Data Structures', 'Visualization']
