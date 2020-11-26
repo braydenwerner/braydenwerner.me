@@ -26,7 +26,8 @@ const projectLinks = [
         name: 'Long Chess',
         description: `A multiplayer online chess website featuring three different chess related game modes.
                       Create a room and play with a friend!`,
-        url: 'https://github.com/braydenwerner/Long-Chess',
+        githubURL: 'https://github.com/braydenwerner/Long-Chess',
+        websiteURL: 'https://long-chess.netlify.app/',
         vid: longChessMP4,
         tags: ['Websockets', 'Node.js', 'Express.js']
     },
@@ -34,15 +35,16 @@ const projectLinks = [
         name: 'Periodic Galaxy',
         description: `A space themed IO game. Pilot unique spaceships in an fast-paced, real time battlefield.
         Login with your google account to save your progress.`,
-        url: 'https://github.com/braydenwerner/Periodic-Galaxy',
+        githubURL: 'https://github.com/braydenwerner/Periodic-Galaxy',
+        websiteURL: 'https://www.periodicgalaxy.com/',
         vid: pgioMP4,
         tags: ['Websockets', 'SQL', 'Node.js', 'Express.js', 'Google Login API']
     },
     {
         name: 'Maze Generator',
-        description: `A customizable tool to visualize how a simple maze generation algorithm behaves.
-        `,
-        url: 'https://github.com/braydenwerner/Maze-Generation-Visualization',
+        description: 'A customizable tool to visualize how a simple maze generation algorithm behaves.',
+        githubURL: 'https://github.com/braydenwerner/Maze-Generation-Visualization',
+        websiteURL: 'https://maze-generation-visualizer.netlify.app/',
         vid: mazeGenerationVidMP4,
         tags: ['Algorithms', 'Data Structures', 'Visualization']
     }

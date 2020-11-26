@@ -21,7 +21,7 @@ export default function Projects() {
                         </div>
                     </Fade>
                     <div className="project-container">
-                        {projectLinks.map(({ name, description, url, vid, tags }) => {
+                        {projectLinks.map(({ name, description, githubURL, websiteURL, vid, tags }) => {
                             return (
                                 <Fade up key="null">
                                     <div className="project-background" key={name}>
@@ -29,9 +29,7 @@ export default function Projects() {
                                             <div className="project-column-1">
                                                 <div className="project-title-container">
                                                     <h1 className="project-title">{name}</h1>
-                                                    <a className="project-url" href={url} aria-label={name} target="_blank" rel="noreferrer">
-                                                        <IconImage className="github-icon" name="GitHub" />
-                                                    </a>
+
                                                 </div>
                                                 <div className="project-description-container">
                                                     <h2 className="project-description">{description}</h2>
@@ -50,6 +48,14 @@ export default function Projects() {
                                                         <source src={vid} type="video/mp4"></source>
                                                     </video>
                                                 )}
+                                                <div className="external-link-container" >
+                                                    <a className="project-github-url" href={githubURL} aria-label={name} target="_blank" rel="noreferrer">
+                                                        <IconImage name="GitHub" />
+                                                    </a>
+                                                    <a className="project-website-url" href={websiteURL} aria-label={name} target="_blank" rel="noreferrer">
+                                                        <IconImage name="Website" />
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
