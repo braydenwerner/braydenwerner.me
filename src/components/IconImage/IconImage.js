@@ -8,7 +8,7 @@ export default function IconImage({ name }) {
         case 'Linkedin': source = 'fab fa-linkedin'; break
         case 'Youtube': source = 'fab fa-youtube-square'; break
         case 'Email': source = 'far fa-envelope'; break
-        case 'Website': source = 'fas fa-external-link-alt'; break;
+        case 'Website': source = 'fas fa-external-link-alt'; break
     }
 
     return (
