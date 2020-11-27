@@ -1,0 +1,14 @@
+.navContainer {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  background-color: red;
+  z-index: 2;
+
+  .nav-item {
+    list-style: none;
+    padding: 20px;
+  }
+}

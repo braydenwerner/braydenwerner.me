@@ -2,18 +2,13 @@ import React from 'react'
 import Fade from 'react-reveal/Fade'
 import { IconImage } from '../exports'
 import { projectLinks } from '../../constants/constants'
+import { Element } from 'react-scroll'
 import './Projects.scss'
 
 export default function Projects() {
-    //  play gif on hover?
-    projectLinks.map(p => {
-        console.log(p.vid)
-        return 0
-    })
-
     return (
         <>
-            <div className="outer-container">
+            <Element name="Projects" className="outer-project-container">
                 <div className="main-container">
                     <Fade up>
                         <div className="title-container">
@@ -21,10 +16,10 @@ export default function Projects() {
                         </div>
                     </Fade>
                     <div className="project-container">
-                        {projectLinks.map(({ name, description, githubURL, websiteURL, vid, tags }) => {
+                        {projectLinks && projectLinks.map(({ name, description, githubURL, websiteURL, vid, tags }) => {
                             return (
-                                <Fade up key="null">
-                                    <div className="project-background" key={name}>
+                                <Fade up key={name}>
+                                    <div className="project-background" >
                                         <div className="column-wrapper">
                                             <div className="project-column-1">
                                                 <div className="project-title-container">
@@ -35,9 +30,9 @@ export default function Projects() {
                                                     <h2 className="project-description">{description}</h2>
                                                 </div>
                                                 <div className="project-tags">
-                                                    {tags.map((tag, i) => {
+                                                    {tags.map((tag) => {
                                                         return (
-                                                            <li key={i} className="tag">{tag}</li>
+                                                            <li key={tag} className="tag">{tag}</li>
                                                         )
                                                     })}
                                                 </div>
@@ -64,7 +59,7 @@ export default function Projects() {
                         })}
                     </div>
                 </div>
-            </div>
+            </Element>
         </>
     )
 }

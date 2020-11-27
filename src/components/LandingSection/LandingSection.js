@@ -1,10 +1,11 @@
 import React from 'react'
+import { Element } from 'react-scroll'
 import './LandingSection.scss'
 
 export default function LandingSection() {
     return (
         <>
-            <div className='landing-section-container'>
+            <Element name="Home" className='landing-section-container'>
                 <div className='name-container'>
                     <h1>Brayden Werner</h1>
                     <h2>Software Engineer</h2>
@@ -12,7 +13,7 @@ export default function LandingSection() {
                 </div>
                 <div className='paragraph-container'>
                 </div>
-            </div>
+            </Element>
         </>
     )
 }

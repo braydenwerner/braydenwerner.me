@@ -2,6 +2,15 @@ import longChessMP4 from '../mp4/long-chess.mp4'
 import pgioMP4 from '../mp4/pgio.mp4'
 import mazeGenerationVidMP4 from '../mp4/maze-generation-vid.mp4'
 
+const navLinks = [
+    {
+        name: 'Home'
+    },
+    {
+        name: 'Projects'
+    }
+]
+
 const socialLinks = [
     {
         name: 'GitHub',
@@ -62,4 +71,4 @@ const colors = {
     themeGray: 'A6ACB2'
 }
 
-export { socialLinks, projectLinks, ANIMATION_DELAY, colors }
+export { navLinks, socialLinks, projectLinks, ANIMATION_DELAY, colors }
