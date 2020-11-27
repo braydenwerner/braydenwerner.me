@@ -151,22 +151,39 @@
             }
 
             .external-link-container {
-              margin-top: 10px;
               position: relative;
               right: 10%;
+              margin-top: 10px;
 
               @media (max-width: 1150px) {
                 right: 0;
               }
+
               .project-github-url {
+                position: relative;
                 font-size: 30px;
                 color: white;
+
+                i {
+                  &:hover,
+                  &:focus {
+                    transform: translateY(-3px);
+                  }
+                }
               }
 
               .project-website-url {
+                position: relative;
                 font-size: 25px;
                 color: white;
                 margin-left: 10px;
+
+                i {
+                  &:hover,
+                  &:focus {
+                    transform: translateY(-3px);
+                  }
+                }
               }
             }
           }

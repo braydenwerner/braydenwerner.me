@@ -59,8 +59,6 @@ const projectLinks = [
     }
 ]
 
-const ANIMATION_DELAY = 500
-
 const colors = {
     themeBlueForeground: '#292D3E',
     themeBlueBackground: '#1B1E2B',
@@ -71,4 +69,4 @@ const colors = {
     themeGray: 'A6ACB2'
 }
 
-export { navLinks, socialLinks, projectLinks, ANIMATION_DELAY, colors }
+export { navLinks, socialLinks, projectLinks, colors }

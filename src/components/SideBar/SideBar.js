@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import { ANIMATION_DELAY } from '../../constants/constants'
 import PropTypes from 'prop-types'
 import './SideBar.scss'
 
@@ -7,14 +6,14 @@ export default function SideBar({ children, location }) {
     const [isMounted, setMounted] = useState(false)
 
     useEffect(() => {
-        const timeout = setTimeout(() => setMounted(true), ANIMATION_DELAY)
+        const timeout = setTimeout(() => setMounted(true), 500)
         return () => clearTimeout(timeout)
     }, [])
 
     return (
         <>
             {isMounted && (
-                <div className={location} >
+                <div className={location}>
                     {children}
                 </div>
             )}
