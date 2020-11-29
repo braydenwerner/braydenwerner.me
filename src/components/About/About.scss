@@ -1,0 +1,88 @@
+@import "../../constants/constants";
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Vollkorn:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&family=Tajawal:wght@300;400&display=swap");
+
+.outer-about-container {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .main-container {
+    width: 900px;
+
+    @media (max-width: 920px) {
+      width: 50%;
+    }
+    @media (max-width: 965px) {
+      width: 85%;
+    }
+    @media (max-width: 700px) {
+      width: 95%;
+    }
+
+    .title-container {
+      font-family: "Vollkorn", serif;
+      font-weight: 100;
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+
+      &:before {
+        content: "";
+        margin-top: 30px;
+        margin-right: 10px;
+        display: block;
+        width: 20%;
+        height: 2px;
+        background-color: $themeWhite;
+      }
+
+      &:after {
+        content: "";
+        margin-top: 30px;
+        margin-left: 10px;
+        display: block;
+        width: 70%;
+        height: 2px;
+        background-color: $themeWhite;
+      }
+
+      .title {
+        font-size: 50px;
+        color: $themeRed;
+      }
+    }
+
+    .column-wrapper {
+      display: flex;
+      flex-direction: row;
+
+      .column-1 {
+        width: 57%;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(18, 18, 18, 0.9);
+
+        p {
+          color: rgb(138, 138, 138);
+          margin-left: 10px;
+          margin-right: 10px;
+          font-size: 17px;
+          line-height: 25px;
+          font-family: "Cairo", sans-serif;
+
+          a {
+            color: $themeRed;
+          }
+        }
+      }
+
+      .column-2 {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}

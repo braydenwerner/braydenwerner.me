@@ -7,6 +7,9 @@ const navLinks = [
         name: 'Home'
     },
     {
+        name: 'About'
+    },
+    {
         name: 'Projects'
     }
 ]
@@ -38,16 +41,16 @@ const projectLinks = [
         githubURL: 'https://github.com/braydenwerner/Long-Chess',
         websiteURL: 'https://long-chess.netlify.app/',
         vid: longChessMP4,
-        tags: ['Websockets', 'Node.js', 'Express.js']
+        tags: ['Socket.io', 'Node.js', 'Express.js']
     },
     {
         name: 'Periodic Galaxy',
-        description: `A space themed IO game. Pilot unique spaceships in an fast-paced, real time battlefield.
-        Login with your google account to save your progress.`,
+        description: `A space themed multiplayer IO game. Pilot unique spaceships in a fast-paced, real time battlefield.
+        Login with Google to save your progress.`,
         githubURL: 'https://github.com/braydenwerner/Periodic-Galaxy',
         websiteURL: 'https://www.periodicgalaxy.com/',
         vid: pgioMP4,
-        tags: ['Websockets', 'SQL', 'Node.js', 'Express.js', 'Google Login API']
+        tags: ['Socket.io', 'SQL', 'Node.js', 'Express.js', 'Google Login API']
     },
     {
         name: 'Maze Generator',

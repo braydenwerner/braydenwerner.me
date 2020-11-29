@@ -8,7 +8,7 @@ export default function Nav() {
     const [isMounted, setMounted] = useState(false)
 
     useEffect(() => {
-        const timeout = setTimeout(() => setMounted(true), 800)
+        const timeout = setTimeout(() => setMounted(true), 400)
         return () => clearTimeout(timeout)
     }, [])
     return (
@@ -19,7 +19,7 @@ export default function Nav() {
                         {navLinks && navLinks.map(({ name }) => {
                             return (
                                 <li className="nav-item" key={name}>
-                                    <Link activeClass="active" to={name} spy={true} smooth={true} offset={-70} duration={500}>
+                                    <Link activeClass="active" to={name} spy={true} smooth={true} offset={-140} duration={500}>
                                         {name}
                                     </Link>
                                 </li>

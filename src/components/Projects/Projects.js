@@ -24,7 +24,6 @@ export default function Projects() {
                                             <div className="project-column-1">
                                                 <div className="project-title-container">
                                                     <h1 className="project-title">{name}</h1>
-
                                                 </div>
                                                 <div className="project-description-container">
                                                     <h2 className="project-description">{description}</h2>
