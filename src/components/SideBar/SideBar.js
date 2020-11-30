@@ -7,6 +7,8 @@ export default function SideBar({ children, location }) {
 
     useEffect(() => {
         const timeout = setTimeout(() => setMounted(true), 2000)
+        console.log(children)
+        console.log(location)
         return () => clearTimeout(timeout)
     }, [])
 

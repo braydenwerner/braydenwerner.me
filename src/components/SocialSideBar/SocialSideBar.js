@@ -11,7 +11,6 @@ export default function SocialSideBar() {
                     <li key={name}>
                         <a href={url} aria-label={name} target="_blank" rel="noreferrer">
                             <IconImage name={name} />
-                            <h1>Test</h1>
                         </a>
                     </li>
                 ))}
