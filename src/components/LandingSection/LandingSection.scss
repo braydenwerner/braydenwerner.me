@@ -1,5 +1,6 @@
 @import "../../constants/constants";
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Vollkorn:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 
 .landing-section-container {
   display: flex;
@@ -27,12 +28,24 @@
       font-size: 100px;
       margin: 0;
 
-      @media (max-width: 710px) {
+      @media (max-width: 950px) {
+        font-size: 80px;
+      }
+
+      @media (max-width: 770px) {
+        font-size: 70px;
+      }
+
+      @media (max-width: 600px) {
+        margin-left: 10px;
         font-size: 60px;
       }
 
-      @media (max-width: 500px) {
-        margin-left: 10px;
+      @media (max-width: 530px) {
+        font-size: 50px;
+      }
+
+      @media (max-width: 455px) {
         font-size: 40px;
       }
     }
@@ -44,28 +57,68 @@
       font-size: 60px;
       font-weight: 600;
 
-      @media (max-width: 710px) {
+      @media (max-width: 950px) {
+        font-size: 50px;
+      }
+
+      @media (max-width: 770px) {
+        font-size: 40px;
+      }
+
+      @media (max-width: 600px) {
+        margin-left: 10px;
+        font-size: 40px;
+      }
+
+      @media (max-width: 530px) {
         font-size: 30px;
       }
-
-      @media (max-width: 500px) {
-        margin-left: 10px;
-        font-size: 25px;
-      }
     }
-    p {
-      position: relative;
-      color: $themeLightYellow;
-      font-family: "Archivo", sans-serif;
-      font-weight: 600;
-      font-size: 20px;
 
-      @media (max-width: 710px) {
-        font-size: 20px;
+    .button-container {
+      display: flex;
+      width: 25%;
+      margin-left: 5px;
+
+      @media (max-width: 970px) {
+        width: 35%;
       }
 
-      @media (max-width: 500px) {
-        margin-left: 10px;
+      @media (max-width: 600px) {
+        width: 45%;
+      }
+
+      @media (max-width: 360px) {
+        display: none;
+      }
+
+      button {
+        cursor: pointer;
+        padding: 20px;
+        color: $themeWhite;
+        font-family: "Roboto Mono", monospace;
+        font-size: 16px;
+        font-weight: 200;
+        width: 50%;
+        background-color: $themeRed;
+        border: none;
+        margin-right: 5px;
+        outline: none;
+
+        @media (max-width: 710px) {
+          padding: 15px;
+          font-size: 15px;
+        }
+
+        @media (max-width: 600px) {
+          padding: 15px;
+          font-size: 12px;
+        }
+
+        &:hover,
+        &:focus {
+          color: red;
+        }
       }
     }
   }
