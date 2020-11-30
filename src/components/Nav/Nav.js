@@ -6,7 +6,7 @@ import './Nav.scss'
 
 export default function Nav() {
     const [isMounted, setMounted] = useState(false)
-    const navLinkDelay = 200
+    const navLinkDelay = 400
 
     useEffect(() => {
         const timeout = setTimeout(() => setMounted(true), 1100)
@@ -28,6 +28,9 @@ export default function Nav() {
                                 </Fade>
                             )
                         })}
+                        <a href="mailto:braydenwerner0@gmail.com" aria-label={name} target="_blank" rel="noreferrer">
+                            <div className="nav-email">braydenwerner0@gmail.com</div>
+                        </a>
                     </div>
                 </Fade>
             )}

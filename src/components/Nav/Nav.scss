@@ -24,4 +24,24 @@
       color: red;
     }
   }
+
+  .nav-email {
+    position: absolute;
+    right: 5px;
+    font-family: "Roboto Mono", monospace;
+    list-style: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    color: $themeLightYellow;
+
+    &:hover,
+    &:focus {
+      color: red;
+    }
+
+    @media (max-width: 590px) {
+      display: none;
+    }
+  }
 }
