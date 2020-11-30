@@ -4,10 +4,10 @@ import { socialLinks } from '../../constants/constants'
 import './SocialSideBar.scss'
 
 export default function SocialSideBar() {
+    console.log(socialLinks)
     return (
         <SideBar location="right">
             <div className="social-list">
-                <div className="bar1"></div>
                 {socialLinks && socialLinks.map(({ url, name }) => (
                     <li key={name}>
                         <a href={url} aria-label={name} target="_blank" rel="noreferrer">
@@ -15,7 +15,6 @@ export default function SocialSideBar() {
                         </a>
                     </li>
                 ))}
-                <div className="bar2"></div>
             </div>
         </SideBar>
     )
