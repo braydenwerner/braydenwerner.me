@@ -6,7 +6,7 @@ export default function HomePage() {
         <>
             <Layout>
                 <Background />
-                <LandingSection />]
+                <LandingSection />
                 <About />
                 <Projects />
             </Layout>

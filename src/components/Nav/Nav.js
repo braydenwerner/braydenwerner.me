@@ -23,7 +23,6 @@ export default function Nav() {
                                         {name}
                                     </Link>
                                 </li>
-
                             )
                         })}
                     </div>

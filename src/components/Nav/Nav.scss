@@ -1,5 +1,7 @@
 @import "../../constants/constants";
 @import url("https://fonts.googleapis.com/css2?family=Castoro&family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
 .navContainer {
   position: fixed;
   top: 0;
@@ -10,7 +12,7 @@
   z-index: 2;
 
   .nav-item {
-    font-family: "Castoro", serif;
+    font-family: "Roboto Mono", monospace;
     list-style: none;
     padding: 15px;
     cursor: pointer;

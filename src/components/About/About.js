@@ -24,7 +24,7 @@ export default function About() {
                                 <p>
                                     I enjoy building applications in a variety of languages, using different technologies,
                                     and I am always looking to learn something new.
-                            </p>
+                                </p>
                             </div>
 
                             <div className="column-2">
