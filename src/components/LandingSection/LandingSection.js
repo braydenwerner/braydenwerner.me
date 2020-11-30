@@ -18,10 +18,14 @@ export default function LandingSection() {
 
                     <div className="button-container">
                         <Fade up delay={550} duration={500} distance="40%">
-                            <button className="contact-button">Contact</button>
+                            <a href="mailto:braydenwerner0@gmail.com" aria-label={name} target="_blank" rel="noreferrer">
+                                <button className="contact-button">Contact</button>
+                            </a>
                         </Fade>
                         <Fade up delay={700} duration={500} distance="40%">
-                            <button className="resume-button">Resume</button>
+                            <a>
+                                <button className="resume-button">Resume</button>
+                            </a>
                         </Fade>
                     </div>
                 </div>

@@ -91,33 +91,34 @@
       @media (max-width: 360px) {
         display: none;
       }
-
-      button {
-        cursor: pointer;
-        padding: 20px;
-        color: $themeWhite;
-        font-family: "Roboto Mono", monospace;
-        font-size: 16px;
-        font-weight: 200;
+      a {
         width: 50%;
-        background-color: $themeRed;
-        border: none;
-        margin-right: 5px;
-        outline: none;
+        button {
+          cursor: pointer;
+          padding: 20px;
+          color: $themeWhite;
+          font-family: "Roboto Mono", monospace;
+          font-size: 16px;
+          font-weight: 200;
 
-        @media (max-width: 710px) {
-          padding: 15px;
-          font-size: 15px;
-        }
+          background-color: $themeRed;
+          border: none;
+          margin-right: 5px;
+          outline: none;
 
-        @media (max-width: 600px) {
-          padding: 15px;
-          font-size: 12px;
-        }
+          @media (max-width: 710px) {
+            padding: 15px;
+            font-size: 15px;
+          }
 
-        &:hover,
-        &:focus {
-          color: red;
+          @media (max-width: 600px) {
+            padding: 15px;
+            font-size: 12px;
+          }
+
+          &:hover {
+            color: red;
+          }
         }
       }
     }
