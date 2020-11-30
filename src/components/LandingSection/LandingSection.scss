@@ -7,7 +7,7 @@
   min-height: 100vh;
   justify-content: center;
 
-  .name-container {
+  .inner-container {
     width: 900px;
 
     @media (max-width: 920px) {
@@ -22,8 +22,6 @@
 
     h1 {
       position: relative;
-      animation-name: appear;
-      animation-duration: 1s;
       font-family: "Vollkorn", serif;
       color: $themeRed;
       font-size: 100px;
@@ -40,8 +38,6 @@
     }
     h2 {
       position: relative;
-      animation-name: appear;
-      animation-duration: 1.5s;
       margin-top: 5px;
       color: $themeLightYellow;
       font-family: "Archivo", sans-serif;
@@ -59,8 +55,6 @@
     }
     p {
       position: relative;
-      animation-name: appear;
-      animation-duration: 2s;
       color: $themeLightYellow;
       font-family: "Archivo", sans-serif;
       font-weight: 600;
@@ -74,23 +68,5 @@
         margin-left: 10px;
       }
     }
-  }
-}
-
-.paragraph-container {
-}
-
-@keyframes appear {
-  0% {
-    opacity: 0%;
-    top: 50px;
-  }
-
-  50% {
-    opacity: 100%;
-  }
-
-  100% {
-    top: 0px;
   }
 }

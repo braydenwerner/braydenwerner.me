@@ -6,9 +6,10 @@ import './Nav.scss'
 
 export default function Nav() {
     const [isMounted, setMounted] = useState(false)
+    const navLinkDelay = 200
 
     useEffect(() => {
-        const timeout = setTimeout(() => setMounted(true), 400)
+        const timeout = setTimeout(() => setMounted(true), 1100)
         return () => clearTimeout(timeout)
     }, [])
     return (
@@ -16,13 +17,15 @@ export default function Nav() {
             {isMounted && (
                 <Fade down key={name}>
                     <div className="navContainer">
-                        {navLinks && navLinks.map(({ name }) => {
+                        {navLinks && navLinks.map(({ name }, i) => {
                             return (
-                                <li className="nav-item" key={name}>
-                                    <Link activeClass="active" to={name} spy={true} smooth={true} offset={-140} duration={500}>
-                                        {name}
-                                    </Link>
-                                </li>
+                                <Fade down key={name} delay={i * navLinkDelay}>
+                                    <li className="nav-item" >
+                                        <Link activeClass="active" to={name} spy={true} smooth={true} offset={-140} duration={500}>
+                                            {name}
+                                        </Link>
+                                    </li>
+                                </Fade>
                             )
                         })}
                     </div>
