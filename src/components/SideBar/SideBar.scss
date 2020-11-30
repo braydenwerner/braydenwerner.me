@@ -22,9 +22,9 @@
   animation-name: fade-in;
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
-  z-index: 5;
+  z-index: 1;
 
-  @media screen and (max-width: 1230px) {
+  @media (max-width: 1230px) {
     display: none;
   }
 }
