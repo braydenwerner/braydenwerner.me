@@ -7,7 +7,7 @@
   padding: 0;
   list-style: none;
 
-  &:before {
+  .bar1 {
     content: "";
     display: block;
     width: 2px;
@@ -16,7 +16,7 @@
     background-color: $themeWhite;
   }
 
-  &:after {
+  .bar2 {
     content: "";
     display: block;
     width: 2px;
