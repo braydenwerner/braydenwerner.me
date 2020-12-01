@@ -1,8 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { SocialSideBar } from '../exports'
+import { Nav, SocialSideBar } from '../exports'
 import './Layout.scss'
-import Nav from '../Nav/Nav'
 
 export default function Layout({ children }) {
     return (

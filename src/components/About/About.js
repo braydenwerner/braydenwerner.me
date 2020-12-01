@@ -10,14 +10,14 @@ export default function About() {
         <>
             <Element name="About" className="outer-about-container">
                 <Fade up>
-                    <div className="main-container">
+                    <div className="about-main-container">
 
-                        <div className="title-container">
-                            <div className="title">About</div>
+                        <div className="about-title-container">
+                            <div className="about-title">About</div>
                         </div>
-                        <div className="column-wrapper">
-                            <div className="column-1">
-                                <h1 className="column-1-header">
+                        <div className="about-column-wrapper">
+                            <div className="about-column-1">
+                                <h1 className="about-column-1-header">
                                     Hi, my name is Brayden.
                                 </h1>
                                 <p>
@@ -32,11 +32,11 @@ export default function About() {
                                 </p>
                             </div>
 
-                            <div className="column-2">
+                            <div className="about-column-2">
                                 <h1>
-                                    Technologies I&apos;ve used
+                                    A Few Technologies I&apos;ve Used
                                 </h1>
-                                <div className="tech-grid">
+                                <div className="about-tech-grid">
                                     <i className="fab fa-js"></i>
                                     <i className="fab fa-html5"></i>
                                     <i className="fab fa-css3-alt"></i>
@@ -55,7 +55,7 @@ export default function About() {
                     </div>
                 </Fade>
 
-                <div className="button-container">
+                <div className="about-button-container">
                     <Fade up delay={250} duration={500} distance="40%">
                         <a href="mailto:braydenwerner0@gmail.com" aria-label={name} target="_blank" rel="noreferrer">
                             <button className="contact-button">Contact</button>

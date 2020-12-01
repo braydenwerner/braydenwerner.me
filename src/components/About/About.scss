@@ -3,12 +3,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap");
 
 .outer-about-container {
-  margin-top: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  .main-container {
+  .about-main-container {
     width: 900px;
 
     @media (max-width: 920px) {
@@ -21,7 +20,7 @@
       width: 95%;
     }
 
-    .title-container {
+    .about-title-container {
       font-family: "Lora", serif;
       font-weight: 100;
       display: flex;
@@ -48,13 +47,13 @@
         background-color: $themeWhite;
       }
 
-      .title {
+      .about-title {
         font-size: 50px;
         color: $themeRed;
       }
     }
 
-    .column-wrapper {
+    .about-column-wrapper {
       display: flex;
       flex-direction: row;
 
@@ -62,7 +61,7 @@
         flex-direction: column;
       }
 
-      .column-1 {
+      .about-column-1 {
         width: 57%;
         display: flex;
         flex-direction: column;
@@ -85,7 +84,7 @@
           }
         }
 
-        .column-1-header {
+        .about-column-1-header {
           color: $themeRed;
           margin-left: 10px;
           margin-right: 10px;
@@ -95,7 +94,7 @@
         }
       }
 
-      .column-2 {
+      .about-column-2 {
         text-align: center;
         width: 43%;
         display: flex;
@@ -115,7 +114,7 @@
           font-family: "Cairo", sans-serif;
         }
 
-        .tech-grid {
+        .about-tech-grid {
           display: grid;
 
           grid-template-columns: repeat(3, 1fr);
@@ -128,14 +127,14 @@
           }
 
           .sql {
-            margin-left: 25px;
+            margin-left: 35px;
             width: 64px;
             filter: brightness(0) invert(1);
           }
 
           .firebase {
             width: 30px;
-            margin-left: 45px;
+            margin-left: 50px;
             filter: brightness(0) invert(1);
           }
         }
@@ -143,12 +142,12 @@
     }
   }
 
-  .button-container {
+  .about-button-container {
     width: 900px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: rgba(13, 13, 13, 0.9);
+    background-color: rgba(15, 15, 15, 0.9);
 
     @media (max-width: 920px) {
       width: 50%;

@@ -7,7 +7,7 @@ export default function LandingSection() {
     return (
         <>
             <Element name="Home" className='landing-section-container'>
-                <div className='inner-container'>
+                <div className='landing-inner-container'>
                     <Fade up duration={1000} distance="20%">
                         <h1>Brayden Werner</h1>
                     </Fade>

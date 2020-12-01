@@ -1,5 +1,5 @@
 import React from 'react'
-import { LandingSection, Background, Layout, Projects, About } from '../../components/exports'
+import { LandingSection, Background, Layout, Projects, About, Footer } from '../../components/exports'
 
 export default function HomePage() {
     return (
@@ -9,6 +9,7 @@ export default function HomePage() {
                 <LandingSection />
                 <About />
                 <Projects />
+                <Footer />
             </Layout>
         </>
     )
