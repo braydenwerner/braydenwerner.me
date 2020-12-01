@@ -1,6 +1,6 @@
 @import "../../constants/constants";
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Vollkorn:wght@800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&family=Tajawal:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap");
 
 .outer-about-container {
   margin-top: 150px;
@@ -22,7 +22,7 @@
     }
 
     .title-container {
-      font-family: "Vollkorn", serif;
+      font-family: "Lora", serif;
       font-weight: 100;
       display: flex;
       flex-direction: row;
@@ -97,7 +97,7 @@
 
       .column-2 {
         text-align: center;
-        width: 40%;
+        width: 43%;
         display: flex;
         flex-direction: column;
         background-color: rgba(18, 18, 18, 0.9);
@@ -139,6 +139,49 @@
             filter: brightness(0) invert(1);
           }
         }
+      }
+    }
+  }
+
+  .button-container {
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(13, 13, 13, 0.9);
+
+    @media (max-width: 920px) {
+      width: 50%;
+    }
+    @media (max-width: 965px) {
+      width: 85%;
+    }
+    @media (max-width: 700px) {
+      width: 95%;
+    }
+
+    button {
+      margin-top: 30px;
+      border-radius: 3px;
+      cursor: pointer;
+      color: $themeWhite;
+      font-family: "Roboto Mono", monospace;
+      font-size: 16px;
+      font-weight: 200;
+      padding: 17px;
+      background-color: $themeRed;
+      border: none;
+      margin-right: 5px;
+      outline: none;
+      margin-bottom: 25px;
+
+      @media (max-width: 710px) {
+        padding: 15px;
+        font-size: 15px;
+      }
+
+      &:hover {
+        color: red;
       }
     }
   }

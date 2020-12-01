@@ -6,10 +6,10 @@ import './Nav.scss'
 
 export default function Nav() {
     const [isMounted, setMounted] = useState(false)
-    const navLinkDelay = 400
+    const navLinkDelay = 300
 
     useEffect(() => {
-        const timeout = setTimeout(() => setMounted(true), 1100)
+        const timeout = setTimeout(() => setMounted(true), 900)
         return () => clearTimeout(timeout)
     }, [])
     return (

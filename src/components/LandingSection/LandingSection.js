@@ -6,7 +6,6 @@ import './LandingSection.scss'
 export default function LandingSection() {
     return (
         <>
-
             <Element name="Home" className='landing-section-container'>
                 <div className='inner-container'>
                     <Fade up duration={1000} distance="20%">
@@ -15,19 +14,6 @@ export default function LandingSection() {
                     <Fade up delay={400} duration={500} distance="40%">
                         <h2>Full Stack Developer</h2>
                     </Fade>
-
-                    <div className="button-container">
-                        <Fade up delay={550} duration={500} distance="40%">
-                            <a href="mailto:braydenwerner0@gmail.com" aria-label={name} target="_blank" rel="noreferrer">
-                                <button className="contact-button">Contact</button>
-                            </a>
-                        </Fade>
-                        <Fade up delay={700} duration={500} distance="40%">
-                            <a>
-                                <button className="resume-button">Resume</button>
-                            </a>
-                        </Fade>
-                    </div>
                 </div>
             </Element>
         </>

@@ -22,8 +22,8 @@ export default function About() {
                                 </h1>
                                 <p>
                                     I&apos;m a full stack developer from Tustin, CA.
-                                    Currently, I am a student at the <a href="https://www.ucdavis.edu/" target="_blank" rel="noreferrer">University of California, Davis </a>
-                                    pursuing a degree in Computer Science.
+                                    Currently, I am a student at the <a href="https://www.ucdavis.edu/" target="_blank" rel="noreferrer">University of California, Davis</a>
+                                    &nbsp;pursuing a degree in Computer Science.
                                 </p>
 
                                 <p>
@@ -54,6 +54,19 @@ export default function About() {
                         </div>
                     </div>
                 </Fade>
+
+                <div className="button-container">
+                    <Fade up delay={250} duration={500} distance="40%">
+                        <a href="mailto:braydenwerner0@gmail.com" aria-label={name} target="_blank" rel="noreferrer">
+                            <button className="contact-button">Contact</button>
+                        </a>
+                    </Fade>
+                    <Fade up delay={400} duration={500} distance="40%">
+                        <a>
+                            <button className="resume-button">Resume</button>
+                        </a>
+                    </Fade>
+                </div>
             </Element>
         </>
     )

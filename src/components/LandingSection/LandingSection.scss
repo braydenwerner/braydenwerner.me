@@ -74,51 +74,5 @@
         font-size: 30px;
       }
     }
-
-    .button-container {
-      display: flex;
-      margin-left: 5px;
-
-      @media (max-width: 970px) {
-        width: 35%;
-      }
-
-      @media (max-width: 600px) {
-        width: 55%;
-      }
-
-      @media (max-width: 360px) {
-        display: none;
-      }
-      a {
-        button {
-          cursor: pointer;
-          color: $themeWhite;
-          font-family: "Roboto Mono", monospace;
-          font-size: 16px;
-          font-weight: 200;
-          padding: 17px;
-
-          background-color: $themeRed;
-          border: none;
-          margin-right: 5px;
-          outline: none;
-
-          @media (max-width: 710px) {
-            padding: 15px;
-            font-size: 15px;
-          }
-
-          @media (max-width: 600px) {
-            padding: 15px;
-            font-size: 12px;
-          }
-
-          &:hover {
-            color: red;
-          }
-        }
-      }
-    }
   }
 }
