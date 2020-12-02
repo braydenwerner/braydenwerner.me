@@ -4,7 +4,6 @@ import { socialLinks } from '../../constants/constants'
 import './SocialSideBar.scss'
 
 export default function SocialSideBar() {
-    console.log(socialLinks)
     return (
         <SideBar location="right">
             <div className="social-list">
