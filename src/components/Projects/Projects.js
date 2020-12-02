@@ -10,7 +10,7 @@ export default function Projects() {
         <>
             <Element name="Projects" className="outer-project-container">
                 <div className="main-container">
-                    <Fade up>
+                    <Fade distance="100%" up>
                         <div className="title-container">
                             <div className="title">Projects</div>
                         </div>
@@ -18,7 +18,7 @@ export default function Projects() {
                     <div className="project-container">
                         {projectLinks && projectLinks.map(({ name, description, githubURL, websiteURL, vid, tags }) => {
                             return (
-                                <Fade up key={name}>
+                                <Fade up distance="20%" key={name}>
                                     <div className="project-background" >
                                         <div className="column-wrapper">
                                             <div className="project-column-1">

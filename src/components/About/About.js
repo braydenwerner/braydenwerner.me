@@ -9,7 +9,7 @@ export default function About() {
     return (
         <>
             <Element name="About" className="outer-about-container">
-                <Fade up>
+                <Fade distance="20%" up>
                     <div className="about-main-container">
 
                         <div className="about-title-container">
@@ -53,21 +53,21 @@ export default function About() {
                             </div>
                         </div>
                     </div>
+                    <div className="about-button-container">
+                        <Fade up delay={250} duration={500} distance="40%">
+                            <a href="mailto:braydenwerner0@gmail.com" aria-label={name} target="_blank" rel="noreferrer">
+                                <button className="contact-button">Contact</button>
+                            </a>
+                        </Fade>
+                        <Fade up delay={400} duration={500} distance="40%">
+                            <a>
+                                <button className="resume-button">Resume</button>
+                            </a>
+                        </Fade>
+                    </div>
                 </Fade>
-
-                <div className="about-button-container">
-                    <Fade up delay={250} duration={500} distance="40%">
-                        <a href="mailto:braydenwerner0@gmail.com" aria-label={name} target="_blank" rel="noreferrer">
-                            <button className="contact-button">Contact</button>
-                        </a>
-                    </Fade>
-                    <Fade up delay={400} duration={500} distance="40%">
-                        <a>
-                            <button className="resume-button">Resume</button>
-                        </a>
-                    </Fade>
-                </div>
             </Element>
+
         </>
     )
 }
