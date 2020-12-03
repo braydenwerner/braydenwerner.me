@@ -2,8 +2,9 @@ import React from 'react'
 import Fade from 'react-reveal/Fade'
 import { Element } from 'react-scroll'
 import './About.scss'
-import sql from '../../icon/sql.svg'
-import firebase from '../../icon/firebase.svg'
+import sqlSvg from '../../icon/sql.svg'
+import firebaseSvg from '../../icon/firebase.svg'
+import resume from '../../res/resume.pdf'
 
 export default function About() {
     return (
@@ -47,8 +48,8 @@ export default function About() {
                                     <i className="fab fa-python"></i>
                                     <i className="fab fa-linux"></i>
                                     <i className="fab fa-aws"></i>
-                                    <img className="sql" src={sql}></img>
-                                    <img className="firebase" src={firebase}></img>
+                                    <img className="sql" src={sqlSvg}></img>
+                                    <img className="firebase" src={firebaseSvg}></img>
                                 </div>
                             </div>
                         </div>
@@ -60,7 +61,7 @@ export default function About() {
                             </a>
                         </Fade>
                         <Fade up delay={400} duration={500} distance="40%">
-                            <a>
+                            <a href={resume} aria-label={name} target="_blank" rel="noreferrer">
                                 <button className="resume-button">Resume</button>
                             </a>
                         </Fade>
