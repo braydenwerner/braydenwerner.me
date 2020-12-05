@@ -36,7 +36,7 @@ const socialLinks = [
 const projectLinks = [
     {
         name: 'Long Chess',
-        description: `A multiplayer online chess website featuring three different chess related game modes.
+        description: `A multiplayer online chess website featuring three different chess-related game modes.
                       Create a room and play with a friend!`,
         githubURL: 'https://github.com/braydenwerner/Long-Chess',
         websiteURL: 'https://long-chess.netlify.app/',
@@ -45,8 +45,8 @@ const projectLinks = [
     },
     {
         name: 'Periodic Galaxy',
-        description: `A space themed multiplayer IO game. Pilot unique spaceships in a fast-paced, real time battlefield.
-        Login with Google to save your progress.`,
+        description: `A space-themed multiplayer IO game. Pilot unique spaceships in a fast-paced, real-time battlefield.
+        Log in with Google to save your progress.`,
         githubURL: 'https://github.com/braydenwerner/Periodic-Galaxy',
         websiteURL: 'https://www.periodicgalaxy.com/',
         vid: pgioMP4,
