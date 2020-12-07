@@ -28,7 +28,7 @@ export default function About() {
                                 </p>
 
                                 <p>
-                                    I enjoy building full stack web applications using a variety of technologies and frameworks.
+                                    I enjoy building full stack applications using a variety of technologies and frameworks.
                                     I&apos;m always looking to learn something new.
                                 </p>
                             </div>
