@@ -1,7 +1,6 @@
 import React from 'react'
 import {
   LandingSection,
-  Background,
   Layout,
   Projects,
   About,
@@ -11,15 +10,12 @@ import {
 
 export default function HomePage() {
   return (
-    <>
-      <Layout>
-        <Background />
-        <LandingSection />
-        <About />
-        <WorkExperience />
-        <Projects />
-        <Footer />
-      </Layout>
-    </>
+    <Layout>
+      <LandingSection />
+      <About />
+      <WorkExperience />
+      <Projects />
+      <Footer />
+    </Layout>
   )
 }

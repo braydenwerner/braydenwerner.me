@@ -2,8 +2,8 @@ import React from 'react'
 import { Element } from 'react-scroll'
 import { Fade } from 'react-reveal'
 import UniverstyMichiganImage from '../../Image/umich.jpg'
-import './WorkExperience.scss'
 import { workExperience } from '../../constants/constants'
+import './WorkExperience.scss'
 
 export default function WorkExperience() {
   return (
