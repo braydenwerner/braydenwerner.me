@@ -1,14 +1,12 @@
-@import "../../constants/constants";
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&family=Tajawal:wght@300;400&display=swap");
+@import '../../constants/constants';
 
-.outer-project-container {
+#outer-project-container {
   margin-top: 325px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  .main-container {
+  #main-container {
     width: 900px;
 
     @media (max-width: 920px) {
@@ -21,15 +19,13 @@
       width: 95%;
     }
 
-    .title-container {
-      font-family: "Lora", serif;
-      font-weight: 100;
+    #title-container {
       display: flex;
       flex-direction: row;
       text-align: center;
 
       &:before {
-        content: "";
+        content: '';
         margin-top: 30px;
         margin-right: 10px;
         display: block;
@@ -39,7 +35,7 @@
       }
 
       &:after {
-        content: "";
+        content: '';
         margin-top: 30px;
         margin-left: 10px;
         display: block;
@@ -48,20 +44,19 @@
         background-color: $themeWhite;
       }
 
-      .title {
-        font-size: 50px;
-        color: $themeRed;
+      #title {
+        @include section-header-red;
       }
     }
-    .project-container {
+    #project-container {
       display: flex;
       flex-direction: column;
       align-items: center;
       margin-top: 40px;
 
-      .project-background {
+      #project-background {
         margin-bottom: 110px;
-        .column-wrapper {
+        #column-wrapper {
           display: flex;
           flex-direction: row;
 
@@ -70,7 +65,7 @@
             flex-direction: column;
           }
 
-          .project-column-1 {
+          #project-column-1 {
             display: flex;
             flex-direction: column;
             width: 550px;
@@ -90,13 +85,13 @@
               width: 95%;
             }
 
-            .project-title-container {
+            #project-title-container {
               display: flex;
               flex-direction: row;
               margin-top: 35px;
 
-              .project-title {
-                font-family: "Vollkorn", serif;
+              #project-title {
+                font-family: 'Vollkorn', serif;
                 margin: 0 10px 0 10px;
                 font-size: 35px;
                 color: $themeRed;
@@ -104,24 +99,19 @@
               }
             }
 
-            .project-description-container {
+            #project-description-container {
               position: relative;
               background-color: rgba(18, 18, 18, 0.9);
               position: relative;
 
-              .project-description {
-                color: rgb(138, 138, 138);
-                margin-left: 10px;
-                margin-right: 10px;
-                font-size: 17px;
-                line-height: 25px;
+              #project-description {
+                @include paragraph-gray-text;
                 font-weight: 400;
-                font-family: "Cairo", sans-serif;
               }
             }
           }
 
-          .project-column-2 {
+          #project-column-2 {
             width: 650px;
             z-index: 1;
             display: flex;
@@ -140,7 +130,7 @@
               width: 95%;
             }
 
-            .project-vid {
+            #project-vid {
               position: relative;
               right: 65px;
               width: 100%;
@@ -150,7 +140,7 @@
               }
             }
 
-            .external-link-container {
+            #external-link-container {
               position: relative;
               right: 10%;
               margin-top: 10px;
@@ -159,7 +149,7 @@
                 right: 0;
               }
 
-              .project-github-url {
+              #project-github-url {
                 position: relative;
                 font-size: 30px;
                 color: white;
@@ -172,7 +162,7 @@
                 }
               }
 
-              .project-website-url {
+              #project-website-url {
                 position: relative;
                 font-size: 25px;
                 color: white;
@@ -190,14 +180,14 @@
         }
       }
 
-      .project-tags {
+      #project-tags {
         display: flex;
         flex-direction: row;
         list-style: none;
         flex-wrap: wrap;
         position: relative;
         font-size: 15.5px;
-        font-family: "Tajawal", sans-serif;
+        font-family: 'Tajawal', sans-serif;
 
         .tag {
           margin: 10px 10px 10px 10px;

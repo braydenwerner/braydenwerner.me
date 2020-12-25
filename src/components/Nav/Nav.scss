@@ -1,8 +1,6 @@
-@import "../../constants/constants";
-@import url("https://fonts.googleapis.com/css2?family=Castoro&family=Josefin+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import '../../constants/constants';
 
-.navContainer {
+#navContainer {
   position: fixed;
   top: 0;
   width: 100%;
@@ -12,7 +10,7 @@
   z-index: 2;
 
   .nav-item {
-    font-family: "Roboto Mono", monospace;
+    font-family: 'Roboto Mono', monospace;
     list-style: none;
     padding: 15px;
     cursor: pointer;
@@ -22,13 +20,17 @@
     &:hover,
     &:focus {
       color: red;
+    }
+
+    @media (max-width: 425px) {
+      font-size: 12px;
     }
   }
 
-  .nav-email {
+  #nav-email {
     position: absolute;
     right: 5px;
-    font-family: "Roboto Mono", monospace;
+    font-family: 'Roboto Mono', monospace;
     list-style: none;
     padding: 15px;
     cursor: pointer;
@@ -40,7 +42,7 @@
       color: red;
     }
 
-    @media (max-width: 590px) {
+    @media (max-width: 725px) {
       display: none;
     }
   }

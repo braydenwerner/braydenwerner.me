@@ -1,14 +1,12 @@
-@import "../../constants/constants";
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Vollkorn:wght@800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import '../../constants/constants';
 
-.landing-section-container {
+#landing-section-container {
   display: flex;
   align-items: center;
   min-height: 100vh;
   justify-content: center;
 
-  .landing-inner-container {
+  #landing-inner-container {
     width: 900px;
 
     @media (max-width: 920px) {
@@ -23,7 +21,7 @@
 
     h1 {
       position: relative;
-      font-family: "Vollkorn", serif;
+      font-family: 'Vollkorn', serif;
       color: $themeRed;
       font-size: 100px;
       margin: 0;
@@ -53,7 +51,7 @@
       position: relative;
       margin-top: 5px;
       color: $themeLightYellow;
-      font-family: "Archivo", sans-serif;
+      font-family: 'Archivo', sans-serif;
       font-size: 60px;
       font-weight: 600;
 

@@ -1,13 +1,11 @@
-@import "../../constants/constants";
-@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&family=Tajawal:wght@300;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap");
+@import '../../constants/constants';
 
-.outer-about-container {
+#outer-about-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  .about-main-container {
+  #about-main-container {
     width: 900px;
 
     @media (max-width: 920px) {
@@ -20,15 +18,13 @@
       width: 95%;
     }
 
-    .about-title-container {
-      font-family: "Lora", serif;
-      font-weight: 100;
+    #about-title-container {
       display: flex;
       flex-direction: row;
       text-align: center;
 
       &:before {
-        content: "";
+        content: '';
         margin-top: 30px;
         margin-right: 10px;
         display: block;
@@ -38,7 +34,7 @@
       }
 
       &:after {
-        content: "";
+        content: '';
         margin-top: 30px;
         margin-left: 10px;
         display: block;
@@ -47,13 +43,12 @@
         background-color: $themeWhite;
       }
 
-      .about-title {
-        font-size: 50px;
-        color: $themeRed;
+      #about-title {
+        @include section-header-red;
       }
     }
 
-    .about-column-wrapper {
+    #about-column-wrapper {
       display: flex;
       flex-direction: row;
 
@@ -61,7 +56,7 @@
         flex-direction: column;
       }
 
-      .about-column-1 {
+      #about-column-1 {
         width: 57%;
         display: flex;
         flex-direction: column;
@@ -72,29 +67,24 @@
         }
 
         p {
-          color: rgb(138, 138, 138);
-          margin-left: 10px;
-          margin-right: 10px;
-          font-size: 17px;
-          line-height: 25px;
-          font-family: "Cairo", sans-serif;
+          @include paragraph-gray-text;
 
           a {
             color: $themeRed;
           }
         }
 
-        .about-column-1-header {
+        #about-column-1-header {
           color: $themeRed;
           margin-left: 10px;
           margin-right: 10px;
           font-size: 17px;
           line-height: 25px;
-          font-family: "Cairo", sans-serif;
+          font-family: 'Cairo', sans-serif;
         }
       }
 
-      .about-column-2 {
+      #about-column-2 {
         text-align: center;
         width: 43%;
         display: flex;
@@ -111,10 +101,10 @@
           margin-right: 10px;
           font-size: 17px;
           line-height: 25px;
-          font-family: "Cairo", sans-serif;
+          font-family: 'Cairo', sans-serif;
         }
 
-        .about-tech-grid {
+        #about-tech-grid {
           display: grid;
 
           grid-template-columns: repeat(3, 1fr);
@@ -126,13 +116,13 @@
             margin-bottom: 7px;
           }
 
-          .sql {
+          #sql {
             margin-left: 35px;
             width: 64px;
             filter: brightness(0) invert(1);
           }
 
-          .firebase {
+          #firebase {
             width: 30px;
             margin-left: 50px;
             filter: brightness(0) invert(1);
@@ -142,7 +132,7 @@
     }
   }
 
-  .about-button-container {
+  #about-button-container {
     width: 900px;
     display: flex;
     flex-direction: row;
@@ -164,7 +154,7 @@
       border-radius: 3px;
       cursor: pointer;
       color: $themeWhite;
-      font-family: "Roboto Mono", monospace;
+      font-family: 'Roboto Mono', monospace;
       font-size: 16px;
       font-weight: 200;
       padding: 17px;

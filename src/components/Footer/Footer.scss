@@ -1,7 +1,6 @@
-@import "../../constants/constants";
-@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&family=Tajawal:wght@300;400&display=swap");
+@import '../../constants/constants';
 
-.main-footer-container {
+#main-footer-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,6 +10,6 @@
   .footer-text {
     color: rgb(138, 138, 138);
     font-size: 17px;
-    font-family: "Cairo", sans-serif;
+    font-family: 'Cairo', sans-serif;
   }
 }

@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&family=Tajawal:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Vollkorn:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 $font-size-large: 1.2rem;
 $font-size-normal: 1rem;
 $font-size-small: 0.8rem;
@@ -26,4 +31,20 @@ $screen-large: 1400px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@mixin section-header-red {
+  font-family: 'Lora', serif;
+  font-weight: 100;
+  font-size: 50px;
+  color: $themeRed;
+}
+
+@mixin paragraph-gray-text {
+  color: rgb(138, 138, 138);
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 17px;
+  line-height: 25px;
+  font-family: 'Cairo', sans-serif;
 }

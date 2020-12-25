@@ -1,6 +1,6 @@
-@import "../../constants/constants";
+@import '../../constants/constants';
 
-.social-list {
+#social-list {
   @include center;
   flex-direction: column;
   margin: 0;
@@ -8,7 +8,7 @@
   list-style: none;
 
   &:before {
-    content: "";
+    content: '';
     display: block;
     width: 2px;
     height: 100vh;
@@ -17,7 +17,7 @@
   }
 
   &:after {
-    content: "";
+    content: '';
     display: block;
     width: 2px;
     height: 90px;

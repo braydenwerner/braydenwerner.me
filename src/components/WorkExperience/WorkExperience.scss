@@ -1,0 +1,95 @@
+@import '../../constants/constants.scss';
+
+#outer-experience-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 325px;
+
+  #experience-main-container {
+    width: 900px;
+
+    @media (max-width: 920px) {
+      width: 50%;
+    }
+    @media (max-width: 965px) {
+      width: 85%;
+    }
+    @media (max-width: 700px) {
+      width: 95%;
+    }
+
+    #experience-title-container {
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+
+      &:before {
+        content: '';
+        margin-top: 30px;
+        margin-right: 10px;
+        display: block;
+        width: 20%;
+        height: 2px;
+        background-color: $themeWhite;
+      }
+
+      &:after {
+        content: '';
+        margin-top: 30px;
+        margin-left: 10px;
+        display: block;
+        width: 70%;
+        height: 2px;
+        background-color: $themeWhite;
+      }
+
+      #experience-title {
+        @include section-header-red;
+      }
+    }
+
+    #experience-column-wrapper {
+      display: flex;
+      height: 300px;
+
+      #experience-column-1 {
+        background-color: rgba(15, 15, 15, 0.9);
+        height: 100%;
+
+        img {
+          position: relative;
+          top: 35%;
+        }
+      }
+
+      #experience-column-2 {
+        background-color: rgba(18, 18, 18, 0.9);
+        #job-container {
+          display: flex;
+          flex-direction: column;
+          margin-left: 15px;
+
+          h1 {
+            color: $themeRed;
+            font-size: 19px;
+            line-height: 25px;
+            font-family: 'Cairo', sans-serif;
+          }
+
+          h2 {
+            color: $themeYellow;
+            font-size: 17px;
+            line-height: 25px;
+            font-family: 'Cairo', sans-serif;
+          }
+
+          p {
+            @include paragraph-gray-text;
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+}
