@@ -39,8 +39,7 @@ const socialLinks = [
 
 const workExperience = [
   {
-    role:
-      'React.js Developer for a Large-scale Research and Educational Platform (Internship)',
+    role: 'React.js Developer (Internship)',
     employer: 'University of Michigan',
     description: [
       '• Proposed and developed scalable solutions regarding state management with a large-scale database',

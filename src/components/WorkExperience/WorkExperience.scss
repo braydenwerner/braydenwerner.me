@@ -19,7 +19,7 @@
       width: 95%;
     }
 
-    #experience-title-container {
+    #experience-header-container {
       display: flex;
       flex-direction: row;
       text-align: center;
@@ -44,49 +44,58 @@
         background-color: $themeWhite;
       }
 
-      #experience-title {
+      #experience-header {
         @include section-header-red;
       }
     }
 
-    #experience-column-wrapper {
-      display: flex;
-      height: 300px;
+    #experience-inner-container {
+      background-color: rgba(18, 18, 18, 0.9);
+      width: 100%;
 
-      #experience-column-1 {
-        background-color: rgba(15, 15, 15, 0.9);
-        height: 100%;
+      #job-container {
+        h1 {
+          margin: 10px 10px 10px 10px;
+          color: $themeRed;
+          font-size: 19px;
+          font-family: 'Cairo', sans-serif;
+        }
 
-        img {
-          position: relative;
-          top: 35%;
+        h2 {
+          margin: 10px 10px 10px 10px;
+          color: $themeYellow;
+          font-size: 17px;
+          line-height: 25px;
+          font-family: 'Cairo', sans-serif;
         }
       }
 
-      #experience-column-2 {
-        background-color: rgba(18, 18, 18, 0.9);
-        #job-container {
-          display: flex;
-          flex-direction: column;
-          margin-left: 15px;
+      #column-container {
+        display: flex;
 
-          h1 {
-            color: $themeRed;
-            font-size: 19px;
-            line-height: 25px;
-            font-family: 'Cairo', sans-serif;
+        #experience-column-1 {
+          margin-left: 10px;
+
+          @media (max-width: 780px) {
+            display: none;
           }
 
-          h2 {
-            color: $themeYellow;
-            font-size: 17px;
-            line-height: 25px;
-            font-family: 'Cairo', sans-serif;
+          img {
+            margin-top: 15%;
+            width: 250px;
           }
+        }
 
-          p {
-            @include paragraph-gray-text;
-            margin-bottom: 15px;
+        #experience-column-2 {
+          #job-container {
+            display: flex;
+            flex-direction: column;
+            margin-left: 15px;
+
+            p {
+              @include paragraph-gray-text;
+              margin: 10px 10px 10px 10px;
+            }
           }
         }
       }
