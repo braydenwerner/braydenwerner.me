@@ -16,7 +16,7 @@
 <br /> <br />
 
 <div align="center">
-  <a href="braydenwerner.me" target="_blank">
+  <a href="https://braydenwerner.me" target="_blank">
     <img src="https://i.imgur.com/BV9nPVS.png" />
   </a>
 </div>
