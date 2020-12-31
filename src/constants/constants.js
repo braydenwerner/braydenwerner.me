@@ -41,6 +41,7 @@ const workExperience = [
   {
     role: 'React.js Developer (Internship)',
     employer: 'University of Michigan',
+    date: 'December 2020 - Current',
     description: [
       '• Proposed and developed scalable solutions regarding state management with a large-scale database',
       '• Collaborated with other React developers to optimize and improve web performance',

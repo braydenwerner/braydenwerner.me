@@ -77,6 +77,10 @@
           font-family: 'Cairo', sans-serif;
         }
 
+        h3 {
+          @include paragraph-gray-text;
+        }
+
         #job-paragraph-container {
           p {
             @include paragraph-gray-text;

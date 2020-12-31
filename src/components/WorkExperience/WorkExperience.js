@@ -13,14 +13,14 @@ export default function WorkExperience() {
           <div id="experience-header-container">
             <div id="experience-header">Experience</div>
           </div>
-
           <div id="experience-inner-container">
-            {workExperience.map(({ role, employer, description }, i) => {
+            {workExperience.map(({ role, employer, date, description }, i) => {
               return (
                 <div id="job-container" key={i}>
                   <h1>{role}</h1>
                   <img src={employerImage1} />
                   <h2>{employer}</h2>
+                  <h3>{date}</h3>
 
                   <div id="job-paragraph-container">
                     {description.map((description, i) => {
