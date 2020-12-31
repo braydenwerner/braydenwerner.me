@@ -132,8 +132,10 @@
 
             #project-vid {
               position: relative;
-              right: 65px;
+
               width: 100%;
+
+              object-fit: cover;
 
               @media (max-width: 1150px) {
                 right: 0px;

@@ -1,4 +1,4 @@
-import wernMP4 from '../mp4/wern.mp4'
+import wernMP4 from '../mp4/wern-small.mp4'
 import longChessMP4 from '../mp4/long-chess.mp4'
 import pgioMP4 from '../mp4/pgio.mp4'
 import mazeGenerationVidMP4 from '../mp4/maze-generation-vid.mp4'
