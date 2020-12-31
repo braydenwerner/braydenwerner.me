@@ -1,8 +1,8 @@
 import React from 'react'
 import { Element } from 'react-scroll'
 import { Fade } from 'react-reveal'
-import UniverstyMichiganImage from '../../Image/umich.jpg'
 import { workExperience } from '../../constants/constants'
+import employerImage1 from '../../image/umich.jpg'
 import './WorkExperience.scss'
 
 export default function WorkExperience() {
@@ -15,30 +15,21 @@ export default function WorkExperience() {
           </div>
 
           <div id="experience-inner-container">
-            {workExperience.map((job, i) => {
+            {workExperience.map(({ role, employer, description }, i) => {
               return (
                 <div id="job-container" key={i}>
-                  <h1>{job.role}</h1>
-                  <h2>{job.employer}</h2>
+                  <h1>{role}</h1>
+                  <img src={employerImage1} />
+                  <h2>{employer}</h2>
+
+                  <div id="job-paragraph-container">
+                    {description.map((description, i) => {
+                      return <p key={i}>{description}</p>
+                    })}
+                  </div>
                 </div>
               )
             })}
-            <div id="column-container">
-              <div id="experience-column-1">
-                <img src={UniverstyMichiganImage} />
-              </div>
-              <div id="experience-column-2">
-                {workExperience.map((job, i) => {
-                  return (
-                    <div id="job-container" key={i}>
-                      {job.description.map((description, i) => {
-                        return <p key={i}>{description}</p>
-                      })}
-                    </div>
-                  )
-                })}
-              </div>
-            </div>
           </div>
         </div>
       </Fade>
