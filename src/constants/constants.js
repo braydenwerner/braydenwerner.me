@@ -80,9 +80,9 @@ const projectLinks = [
     tags: ['Socket.io', 'SQL', 'Node.js', 'Express.js', 'Google Login API']
   },
   {
-    name: 'Desktop Wallpaper',
+    name: 'EZ Notes',
     description:
-      'A drawing and notetaking tool that is compatible with Wallpaper Engine.',
+      'A drawing and notetaking tool intended as a desktop background that is compatible with Wallpaper Engine.',
     githubURL: 'https://github.com/braydenwerner/Whiteboard-Desktop-Wallpaper',
     websiteURL: 'https://desktop-whiteboard.netlify.app/',
     vid: whiteboardMP4,
