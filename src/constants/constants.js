@@ -2,6 +2,7 @@ import wernMP4 from '../mp4/wern3.mp4'
 import longChessMP4 from '../mp4/long-chess.mp4'
 import pgioMP4 from '../mp4/pgio.mp4'
 import mazeGenerationVidMP4 from '../mp4/maze-generation-vid.mp4'
+import whiteboardMP4 from '../mp4/whiteboard.mp4'
 
 const navLinks = [
   {
@@ -77,6 +78,15 @@ const projectLinks = [
     websiteURL: 'https://www.periodicgalaxy.com/',
     vid: pgioMP4,
     tags: ['Socket.io', 'SQL', 'Node.js', 'Express.js', 'Google Login API']
+  },
+  {
+    name: 'Desktop Wallpaper',
+    description:
+      'A drawing and notetaking tool that is compatible with Wallpaper Engine.',
+    githubURL: 'https://github.com/braydenwerner/Whiteboard-Desktop-Wallpaper',
+    websiteURL: 'https://desktop-whiteboard.netlify.app/',
+    vid: whiteboardMP4,
+    tags: ['JavaScript', 'HTML', 'CSS']
   },
   {
     name: 'Maze Generator',
