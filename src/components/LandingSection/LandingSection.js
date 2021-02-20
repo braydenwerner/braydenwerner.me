@@ -11,7 +11,7 @@ export default function LandingSection() {
           <h1>Brayden Werner</h1>
         </Fade>
         <Fade up delay={400} duration={500} distance="40%">
-          <h2>Full Stack Developer</h2>
+          <h2>Software Engineer</h2>
         </Fade>
       </div>
     </Element>
