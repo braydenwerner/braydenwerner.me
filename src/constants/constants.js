@@ -46,7 +46,7 @@ const workExperience = [
     description: [
       '• Proposed and developed scalable solutions regarding state management with a large-scale database',
       '• Collaborated with other React developers to optimize and improve web performance',
-      '• Worked with a variety of different technologies including React, Firebase, Recoil, and JavaScript'
+      '• Worked with a variety of different technologies including React, Firebase, Recoil, Node.js, and JavaScript'
     ]
   }
 ]
