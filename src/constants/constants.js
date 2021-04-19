@@ -53,6 +53,15 @@ const workExperience = [
 
 const projectLinks = [
   {
+    name: 'EZ Notes',
+    description:
+      'A drawing and notetaking application with over 20,000 downloads on the steam marketplace. It is intended to be used as a desktop background using Wallpaper Engine',
+    githubURL: 'https://github.com/braydenwerner/Whiteboard-Desktop-Wallpaper',
+    websiteURL: 'https://desktop-whiteboard.netlify.app/',
+    vid: whiteboardMP4,
+    tags: ['JavaScript', 'HTML', 'CSS']
+  },
+  {
     name: 'Werntype',
     description:
       'A minimalistic typing website. Type fast to be featured on the leaderboard of top players.',
@@ -78,15 +87,6 @@ const projectLinks = [
     websiteURL: 'https://www.periodicgalaxy.com/',
     vid: pgioMP4,
     tags: ['Socket.io', 'SQL', 'Node.js', 'Express.js', 'Google Login API']
-  },
-  {
-    name: 'EZ Notes',
-    description:
-      'A drawing and notetaking tool intended as a desktop background that is compatible with Wallpaper Engine.',
-    githubURL: 'https://github.com/braydenwerner/Whiteboard-Desktop-Wallpaper',
-    websiteURL: 'https://desktop-whiteboard.netlify.app/',
-    vid: whiteboardMP4,
-    tags: ['JavaScript', 'HTML', 'CSS']
   },
   {
     name: 'Maze Generator',
