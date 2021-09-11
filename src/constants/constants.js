@@ -1,8 +1,12 @@
+import firstamerican from '../image/firstamerican.jpg'
+import umich from '../image/umich.jpg'
 import wernMP4 from '../mp4/wern3.mp4'
 import longChessMP4 from '../mp4/long-chess.mp4'
 import pgioMP4 from '../mp4/pgio.mp4'
 import mazeGenerationVidMP4 from '../mp4/maze-generation-vid.mp4'
 import whiteboardMP4 from '../mp4/whiteboard.mp4'
+import thumbnailGameMP4 from '../mp4/thumbnail-game.mp4'
+import atlasMP4 from '../mp4/Atlas.mp4'
 
 const navLinks = [
   {
@@ -40,7 +44,20 @@ const socialLinks = [
 
 const workExperience = [
   {
-    role: 'React.js Developer (Internship)',
+    role: 'Software Engineering Intern',
+    image: firstamerican,
+    employer: 'First American Title',
+    date: 'June 2021 - September 2021',
+    description: [
+      '• Completely refactored a web application to enable Business-to-Employee authentication for added security',
+      '• Implemented unit testing with xUnit and Mock frameworks and logging with Log4Net',
+      '•	Worked with C# .NET, Angular, SQL Server Management Studio, and Microsoft Azure',
+      '•	Organized work using the Agile Methodology'
+    ]
+  },
+  {
+    role: 'Software Engineering Intern',
+    image: umich,
     employer: 'University of Michigan',
     date: 'December 2020 - Current',
     description: [
@@ -53,11 +70,50 @@ const workExperience = [
 
 const projectLinks = [
   {
+    name: 'Atlas Chrome Extension',
+    description:
+      'A comprehensive tool for drawing, taking notes, and staying organized all on your chrome homepage.',
+    githubURL: 'https://github.com/braydenwerner/Atlas',
+    websiteURL: 'https://github.com/braydenwerner/Atlas',
+    vid: atlasMP4,
+    tags: [
+      'React',
+      'Apollo',
+      'Node.js',
+      'TypeORM',
+      'TypeGraphQL',
+      'PostgreSQL',
+      'TypeScript'
+    ]
+  },
+
+  {
+    name: 'YouTube Thumbnail Game',
+    description:
+      'A fun and addicting game with over 2,000 monthly players. The site displays leaderboard ranking and personal performance percentile against other players.',
+    githubURL: 'https://github.com/Thumbnail-Game/Thumbnail-Game',
+    websiteURL: 'https://www.thumbnailgame.com/',
+    vid: thumbnailGameMP4,
+    tags: [
+      'React',
+      'Next.js',
+      'URQL',
+      'Node.js',
+      'Apollo Server',
+      'TypeORM',
+      'TypeGraphQL',
+      'PostgreSQL',
+      'TypeScript',
+      'YouTube API'
+    ]
+  },
+  {
     name: 'EZ Notes',
     description:
-      'A drawing and notetaking application with over 20,000 downloads on the steam marketplace. It is intended to be used as a desktop background using Wallpaper Engine',
+      'A drawing and note-taking application with over 50,000 downloads on the steam marketplace. It is intended to be used as a desktop background for Wallpaper Engine.',
     githubURL: 'https://github.com/braydenwerner/Whiteboard-Desktop-Wallpaper',
-    websiteURL: 'https://desktop-whiteboard.netlify.app/',
+    websiteURL:
+      'https://steamcommunity.com/sharedfiles/filedetails/?id=2399605361',
     vid: whiteboardMP4,
     tags: ['JavaScript', 'HTML', 'CSS']
   },

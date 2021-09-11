@@ -93,7 +93,7 @@
               #project-title {
                 font-family: 'Vollkorn', serif;
                 margin: 0 10px 0 10px;
-                font-size: 35px;
+                font-size: 34px;
                 color: $themeRed;
                 margin-bottom: 15px;
               }
@@ -188,6 +188,10 @@
         position: relative;
         font-size: 15.5px;
         font-family: 'Tajawal', sans-serif;
+
+        @media (min-width: 1150px) {
+          max-width: 450px;
+        }
 
         .tag {
           margin: 10px 10px 10px 10px;

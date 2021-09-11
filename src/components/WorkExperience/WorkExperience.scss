@@ -58,15 +58,20 @@
         flex-direction: column;
         align-items: center;
 
+        #job-image {
+          width: 400px;
+          height: auto;
+
+          @media (max-width: 420px) {
+            width: 99%;
+          }
+        }
+
         h1 {
           margin: 10px 10px 10px 10px;
           color: $themeRed;
           font-size: 19px;
           font-family: 'Cairo', sans-serif;
-        }
-
-        img {
-          width: 200px;
         }
 
         h2 {
@@ -85,6 +90,10 @@
           p {
             @include paragraph-gray-text;
             margin: 10px 10px 10px 10px;
+          }
+
+          :last-child {
+            margin-bottom: 45px;
           }
         }
       }
