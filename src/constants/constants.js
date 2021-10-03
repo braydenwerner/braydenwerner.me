@@ -74,7 +74,8 @@ const projectLinks = [
     description:
       'A comprehensive tool for drawing, taking notes, and staying organized all on your chrome homepage.',
     githubURL: 'https://github.com/braydenwerner/Atlas',
-    websiteURL: 'https://github.com/braydenwerner/Atlas',
+    websiteURL:
+      'https://chrome.google.com/webstore/detail/atlas/hdipbljnjaoiknbnmhhdiepmjioafgmp?hl=en&authuser=0',
     vid: atlasMP4,
     tags: [
       'React',
