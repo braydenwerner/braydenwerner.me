@@ -49,10 +49,12 @@ const workExperience = [
     employer: 'First American Title',
     date: 'June 2021 - September 2021',
     description: [
-      '• Completely refactored a web application to enable Business-to-Employee authentication for added security',
-      '• Implemented unit testing with xUnit and Mock frameworks and logging with Log4Net',
-      '•	Worked with C# .NET, Angular, SQL Server Management Studio, and Microsoft Azure',
-      '•	Organized work using the Agile Methodology'
+      '• Refactored a web application to enable Business-to-Employee authentication',
+      '• Saved a team 3 hours a week by building a UI to compile and chart data across SQL Server tables ',
+      '• Implemented unit testing with xUnit and Mock frameworks',
+      '• Built CI/CD pipelines with YAML',
+      '• Organized work using the Agile Methodology and met sprint deadlines while working on 3 projects simultaneously ',
+      '• Worked with React, Angular, JavaScript, C# .NET, SQL Server, Microsoft Azure, Git'
     ]
   },
   {
@@ -61,9 +63,10 @@ const workExperience = [
     employer: 'University of Michigan',
     date: 'December 2020 - Current',
     description: [
-      '• Proposed and developed scalable solutions regarding state management with a large-scale database',
-      '• Collaborated with other React developers to optimize and improve web performance',
-      '• Worked with a variety of different technologies including React, Firebase, Recoil, Node.js, and JavaScript'
+      '• Developed scalable solutions for maintaining and expanding a large-scale database',
+      '• Deployed code used by thousands of users',
+      '• Wrote a complex script to update over 1,000 user documents after refactoring the database',
+      '• Worked with a variety of different technologies including React, Firebase, Recoil, Node.js, JavaScript, Git'
     ]
   }
 ]
