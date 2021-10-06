@@ -47,7 +47,7 @@ const workExperience = [
     role: 'Software Engineering Intern',
     image: firstamerican,
     employer: 'First American Title',
-    date: 'June 2021 - September 2021',
+    date: 'June 2021 - Current',
     description: [
       '• Refactored a web application to enable Business-to-Employee authentication',
       '• Saved a team 3 hours a week by building a UI to compile and chart data across SQL Server tables ',
@@ -61,7 +61,7 @@ const workExperience = [
     role: 'Software Engineering Intern',
     image: umich,
     employer: 'University of Michigan',
-    date: 'December 2020 - Current',
+    date: 'December 2020 - May 2020',
     description: [
       '• Developed scalable solutions for maintaining and expanding a large-scale database',
       '• Deployed code used by thousands of users',
