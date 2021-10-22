@@ -1,6 +1,6 @@
 import firstamerican from '../image/firstamerican.jpg'
-import codelab from '../image/codelab.jpg'
 import umich from '../image/umich.jpg'
+import codelab from '../image/codelab.jpg'
 import wernMP4 from '../mp4/wern3.mp4'
 import longChessMP4 from '../mp4/long-chess.mp4'
 import pgioMP4 from '../mp4/pgio.mp4'
