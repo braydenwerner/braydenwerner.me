@@ -1,5 +1,6 @@
 import firstamerican from '../image/firstamerican.jpg'
 import umich from '../image/umich.jpg'
+import codelab from '../image/codelab.jpg'
 import wernMP4 from '../mp4/wern3.mp4'
 import longChessMP4 from '../mp4/long-chess.mp4'
 import pgioMP4 from '../mp4/pgio.mp4'
@@ -67,6 +68,16 @@ const workExperience = [
       '• Deployed code used by thousands of users',
       '• Wrote a complex script to update over 1,000 user documents after refactoring the database',
       '• Worked with a variety of different technologies including React, Firebase, Recoil, Node.js, JavaScript, Git'
+    ]
+  },
+  {
+    role: 'Software Engineer',
+    image: codelab,
+    employer: 'CodeLab',
+    date: 'October 2021 - Current',
+    description: [
+      '• Worked in a small team to develop a self-service fitting room web application for a client',
+      '• Used Angular, TypeScript, Firebase, Jira, Git'
     ]
   }
 ]
