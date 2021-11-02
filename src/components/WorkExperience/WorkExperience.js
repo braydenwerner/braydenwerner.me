@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Element } from 'react-scroll'
 import { Fade } from 'react-reveal'
+
 import { workExperience } from '../../constants/constants'
 import './WorkExperience.scss'
 
