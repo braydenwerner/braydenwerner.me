@@ -31,7 +31,7 @@ const socialLinks = [
   },
   {
     name: 'Linkedin',
-    url: 'https://www.linkedin.com/in/brayden-werner-6908a0141/'
+    url: 'https://www.linkedin.com/in/brayden-werner0/'
   },
   {
     name: 'Youtube',
