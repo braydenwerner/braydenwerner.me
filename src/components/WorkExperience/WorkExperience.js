@@ -53,7 +53,6 @@ export default function WorkExperience() {
                     <img id="job-image" src={image} alt={image} />
                     <h2>{employer}</h2>
                     <h3>{date}</h3>
-
                     <div id="job-paragraph-container">
                       {description.map((description, i) => {
                         return <p key={i}>{description}</p>
