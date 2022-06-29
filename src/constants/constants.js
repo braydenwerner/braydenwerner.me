@@ -51,7 +51,7 @@ const workExperience = [
     role: 'Software Engineer',
     image: meta,
     employer: 'Meta (formerly Facebook) · Internship',
-    date: 'December 2022 - March 2022 · 4 mos',
+    date: 'September 2022 - December 2022 · 4 mos',
     description: []
   },
   {
