@@ -5,7 +5,8 @@ import {
   Projects,
   About,
   Footer,
-  WorkExperience
+  // WorkExperience
+  WorkExperienceVertical
 } from '../../components/exports'
 
 export default function HomePage() {
@@ -13,7 +14,8 @@ export default function HomePage() {
     <Layout>
       <LandingSection />
       <About />
-      <WorkExperience />
+      {/* <WorkExperience /> */}
+      <WorkExperienceVertical />
       <Projects />
       <Footer />
     </Layout>

@@ -1,6 +1,9 @@
-import firstamerican from '../image/firstamerican.jpg'
-import umich from '../image/umich.jpg'
-import codelab from '../image/codelab.jpg'
+import React from 'react'
+import firstamerican from '../image/firstam.jpg'
+import umich from '../image/umich.png'
+import codelab from '../image/codelab.png'
+import aws from '../image/aws.png'
+import meta from '../image/meta.png'
 import wernMP4 from '../mp4/wern3.mp4'
 import longChessMP4 from '../mp4/long-chess.mp4'
 import pgioMP4 from '../mp4/pgio.mp4'
@@ -45,10 +48,24 @@ const socialLinks = [
 
 const workExperience = [
   {
-    role: 'Software Engineering Intern',
+    role: 'Software Engineer',
+    image: meta,
+    employer: 'Meta (formerly Facebook) · Internship',
+    date: 'December 2022 - March 2022 · 4 mos',
+    description: []
+  },
+  {
+    role: 'Software Development Engineer',
+    image: aws,
+    employer: 'Amazon Web Services (AWS) · Internship',
+    date: 'June 2022 - September 2022 · 4 mos',
+    description: []
+  },
+  {
+    role: 'Software Engineer',
     image: firstamerican,
-    employer: 'First American Title',
-    date: 'June 2021 - Current',
+    employer: 'First American Title · Part-time',
+    date: 'June 2021 - May 2022 · 1 yr',
     description: [
       '• Refactored a web application to enable Business-to-Employee authentication',
       '• Saved a team 3 hours a week by building a UI to compile and chart data across SQL Server tables ',
@@ -59,10 +76,10 @@ const workExperience = [
     ]
   },
   {
-    role: 'Software Engineering Intern',
+    role: 'Software Engineer',
     image: umich,
-    employer: 'University of Michigan',
-    date: 'December 2020 - May 2020',
+    employer: 'University of Michigan · Internship',
+    date: 'December 2020 - May 2020 · 6 mos',
     description: [
       '• Developed scalable solutions for maintaining and expanding a large-scale database',
       '• Deployed code used by thousands of users',
@@ -73,8 +90,8 @@ const workExperience = [
   {
     role: 'Software Engineer',
     image: codelab,
-    employer: 'CodeLab',
-    date: 'October 2021 - Current',
+    employer: 'CodeLab · Part-time',
+    date: 'October 2021 - December 2022 · 2 mos',
     description: [
       '• Worked in a small team to develop a self-service fitting room web application for a client',
       '• Used Angular, TypeScript, Firebase, Jira, Git'
@@ -83,6 +100,31 @@ const workExperience = [
 ]
 
 const projectLinks = [
+  {
+    name: 'YouTube Thumbnail Game',
+    description: (
+      <div>
+        A fun and addicting game with over <strong>60,000</strong> monthly
+        players. The site displays leaderboard ranking and personal performance
+        percentile against other players.
+      </div>
+    ),
+    githubURL: 'https://github.com/Thumbnail-Game/Thumbnail-Game',
+    websiteURL: 'https://www.thumbnailgame.com/',
+    vid: thumbnailGameMP4,
+    tags: [
+      'React',
+      'Next.js',
+      'URQL',
+      'Node.js',
+      'Apollo Server',
+      'TypeORM',
+      'TypeGraphQL',
+      'PostgreSQL',
+      'TypeScript',
+      'YouTube API'
+    ]
+  },
   {
     name: 'Atlas Chrome Extension',
     description:
@@ -101,31 +143,16 @@ const projectLinks = [
       'TypeScript'
     ]
   },
-
-  {
-    name: 'YouTube Thumbnail Game',
-    description:
-      'A fun and addicting game with over 2,000 monthly players. The site displays leaderboard ranking and personal performance percentile against other players.',
-    githubURL: 'https://github.com/Thumbnail-Game/Thumbnail-Game',
-    websiteURL: 'https://www.thumbnailgame.com/',
-    vid: thumbnailGameMP4,
-    tags: [
-      'React',
-      'Next.js',
-      'URQL',
-      'Node.js',
-      'Apollo Server',
-      'TypeORM',
-      'TypeGraphQL',
-      'PostgreSQL',
-      'TypeScript',
-      'YouTube API'
-    ]
-  },
   {
     name: 'EZ Notes',
-    description:
-      'A drawing and note-taking application with over 50,000 downloads on the steam marketplace. It is intended to be used as a desktop background for Wallpaper Engine.',
+    description: (
+      <div>
+        A drawing and note-taking application with over <strong>82,000</strong>{' '}
+        downloads, <strong>57,000</strong> active users, and a{' '}
+        <strong>5-star</strong> rating on the steam marketplace. It is intended
+        to be used as a desktop background for Wallpaper Engine.
+      </div>
+    ),
     githubURL: 'https://github.com/braydenwerner/Whiteboard-Desktop-Wallpaper',
     websiteURL:
       'https://steamcommunity.com/sharedfiles/filedetails/?id=2399605361',

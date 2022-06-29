@@ -1,9 +1,9 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade'
 import { Element } from 'react-scroll'
-import { icons } from '../../constants/constants'
-import sqlSvg from '../../icon/sql.svg'
-import firebaseSvg from '../../icon/firebase.svg'
+// import { icons } from '../../constants/constants'
+// import sqlSvg from '../../icon/sql.svg'
+// import firebaseSvg from '../../icon/firebase.svg'
 import resume from '../../pdf/resume.pdf'
 import './About.scss'
 
@@ -19,8 +19,8 @@ export default function About() {
             <div id="about-column-1">
               <h1 id="about-column-1-header">Hi, my name is Brayden.</h1>
               <p>
-                I&apos;m a full stack developer from Tustin, CA. Currently, I am
-                a student at the{' '}
+                I&apos;m a full stack developer with about 2 years of industry
+                experience. Currently, I am a student at the{' '}
                 <a
                   href="https://www.ucdavis.edu/"
                   target="_blank"
@@ -38,7 +38,7 @@ export default function About() {
               </p>
             </div>
 
-            <div id="about-column-2">
+            {/* <div id="about-column-2">
               <h1>A Few Technologies I&apos;ve Used</h1>
               <div id="about-tech-grid">
                 {icons.map((icon, i) => {
@@ -47,7 +47,7 @@ export default function About() {
                 <img id="sql" alt="sql-image" src={sqlSvg}></img>
                 <img id="firebase" alt="firebase-image" src={firebaseSvg}></img>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div id="about-button-container">

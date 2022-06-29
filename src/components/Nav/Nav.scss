@@ -19,7 +19,7 @@
 
     &:hover,
     &:focus {
-      color: red;
+      color: $themeYellowHover;
     }
 
     @media (max-width: 425px) {
@@ -39,7 +39,7 @@
 
     &:hover,
     &:focus {
-      color: red;
+      color: $themeYellowHover;
     }
 
     @media (max-width: 725px) {

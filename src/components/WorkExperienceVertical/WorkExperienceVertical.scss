@@ -1,0 +1,94 @@
+@import '../../constants/constants.scss';
+
+#outer-experience-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 325px;
+
+  #experience-main-container {
+    width: 900px;
+
+    @media (max-width: 920px) {
+      width: 50%;
+    }
+    @media (max-width: 965px) {
+      width: 85%;
+    }
+    @media (max-width: 700px) {
+      width: 95%;
+    }
+
+    #experience-header-container {
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      margin-bottom: 15px;
+
+      &:before {
+        content: '';
+        margin-top: 30px;
+        margin-right: 10px;
+        display: block;
+        width: 20%;
+        height: 2px;
+        background-color: $themeWhite;
+      }
+
+      &:after {
+        content: '';
+        margin-top: 30px;
+        margin-left: 10px;
+        display: block;
+        width: 70%;
+        height: 2px;
+        background-color: $themeWhite;
+      }
+
+      #experience-header {
+        @include section-header-red;
+      }
+    }
+
+    #experience-object-container {
+      display: flex;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      background-color: rgba(15, 15, 15, 0.9);
+
+      #experience-image-container {
+        margin: 27px 10px 10px 10px;
+        #experience-image {
+          width: 80px;
+          height: 80px;
+        }
+      }
+
+      #experience-text-container {
+        margin: 15px 0px 15px 0px;
+        #experience-title {
+          margin: 0px 10px 0px 10px;
+          color: $themeRed;
+          font-size: 19px;
+          font-family: 'Cairo', sans-serif;
+        }
+
+        #experience-employer {
+          margin: 0px 10px 10px 10px;
+          color: $themeYellow;
+          font-size: 17px;
+          font-family: 'Cairo', sans-serif;
+        }
+
+        #experience-date {
+          @include paragraph-gray-text;
+          margin: 10px 10px 10px 10px;
+        }
+
+        #experience-description {
+          @include paragraph-gray-text;
+          margin: 10px 10px 10px 10px;
+        }
+      }
+    }
+  }
+}

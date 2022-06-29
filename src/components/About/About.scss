@@ -51,16 +51,16 @@
     #about-column-wrapper {
       display: flex;
       flex-direction: row;
+      background-color: rgba(18, 18, 18, 0.9);
 
       @media (max-width: 600px) {
         flex-direction: column;
       }
 
       #about-column-1 {
-        width: 57%;
+        width: 100%;
         display: flex;
         flex-direction: column;
-        background-color: rgba(18, 18, 18, 0.9);
 
         @media (max-width: 600px) {
           width: 100%;
@@ -136,7 +136,6 @@
     width: 900px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     background-color: rgba(15, 15, 15, 0.9);
 
     @media (max-width: 920px) {
@@ -150,7 +149,6 @@
     }
 
     button {
-      margin-top: 30px;
       border-radius: 3px;
       cursor: pointer;
       color: $themeWhite;
@@ -160,9 +158,8 @@
       padding: 17px;
       background-color: $themeRed;
       border: none;
-      margin-right: 5px;
       outline: none;
-      margin-bottom: 25px;
+      margin: 30px 10px 15px 15px;
 
       @media (max-width: 710px) {
         padding: 15px;
@@ -170,7 +167,7 @@
       }
 
       &:hover {
-        color: red;
+        background-color: $themeRedHover;
       }
     }
   }
