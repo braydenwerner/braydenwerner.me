@@ -59,7 +59,12 @@ const workExperience = [
     image: aws,
     employer: 'Amazon Web Services (AWS) · Internship',
     date: 'June 2022 - September 2022 · 4 mos',
-    description: []
+    description: [
+      'Built a self-service solution for cloning dependency graphs for AWS products, streamlining a time-consuming, on-call process',
+      '• Differentiated cloning and database work across multiple AWS Lambda functions using AWS SQS for optimal speed and scale',
+      '• Developed unit tests in Java to maintain 90 % code coverage across all AWS Lambda functions',
+      '• Used React, JavaScript, AWS CloudFormation, AWS Lambda, AWS SQS, DynamoDB, Java, Git'
+    ]
   },
   {
     role: 'Software Engineer',
