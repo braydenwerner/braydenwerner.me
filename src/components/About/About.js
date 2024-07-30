@@ -19,22 +19,14 @@ export default function About() {
             <div id="about-column-1">
               <h1 id="about-column-1-header">Hi, my name is Brayden.</h1>
               <p>
-                I&apos;m a full stack developer with about 2 years of industry
-                experience. Currently, I am a student at the{' '}
-                <a
-                  href="https://www.ucdavis.edu/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  University of California, Davis
-                </a>
-                &nbsp;pursuing a degree in Computer Science.
-              </p>
-
-              <p>
-                I enjoy building full stack applications using a variety of
-                technologies and frameworks, and I&apos;m always looking to
-                learn something new.
+                I&apos;m a software engineer with a focus on building reliable
+                and scalable applications. I studied computer science at UC
+                Davis and Colorado State University, where I gained solid skills
+                in various programming languages and technologies. I've had the
+                opportunity to intern at Lacework, Facebook, Amazon Web
+                Services, and First American Title, where I worked on delivering
+                quality software and collaborating with different teams to get
+                things done.
               </p>
             </div>
 

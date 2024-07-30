@@ -1,5 +1,7 @@
 import React from 'react'
+import lacework from '../image/lacework.jpg'
 import firstamerican from '../image/firstam.jpg'
+import trendup from '../image/trendup.png'
 import umich from '../image/umich.png'
 import codelab from '../image/codelab.png'
 import aws from '../image/aws.png'
@@ -37,10 +39,6 @@ const socialLinks = [
     url: 'https://www.linkedin.com/in/brayden-werner0/'
   },
   {
-    name: 'Youtube',
-    url: 'https://www.youtube.com/channel/UCqeUabWTGM4y1cdABffFDCA'
-  },
-  {
     name: 'Email',
     url: 'mailto:braydenwerner0@gmail.com'
   }
@@ -48,22 +46,47 @@ const socialLinks = [
 
 const workExperience = [
   {
-    role: 'Software Engineer',
-    image: meta,
-    employer: 'Meta (formerly Facebook) · Internship',
-    date: 'September 2022 - December 2022 · 4 mos',
-    description: []
+    role: 'Software Engineer Intern',
+    image: lacework,
+    employer: 'Lacework',
+    date: 'June 2024 - August 2024',
+    description: [
+      '• Developed a workflow enabling customers to create and save queries, successfully rolled out to enterprise customers',
+      '• Partnered with cross-functional teams to integrate the feature across application components',
+      '• Tech stack: React, TypeScript, GraphQL, Java, Snowflake, Git'
+    ]
   },
   {
-    role: 'Software Development Engineer',
+    role: 'Cofounder',
+    image: trendup,
+    employer: 'TrendUp',
+    date: 'January 2023 - December 2023 · 1 yr',
+    description: [
+      '• Founded a YCombinator-backed startup, a project visibility calendar for marketing teams',
+      '• Developed a highly efficient drag and drop task management interface',
+      '• Tech stack: React, TypeScript, Python, Next.js, Node.js, Postgres, SQL'
+    ]
+  },
+  {
+    role: 'Software Engineer Intern',
+    image: meta,
+    employer: 'Meta (formerly Facebook)',
+    date: 'September 2022 - December 2022 · 4 mos',
+    description: [
+      '• Shipped a tool to help ML engineers understand and debug Facebook feed recommendations (”suggested for you” posts)',
+      '• Achieved all internship stretch goals 4 weeks ahead of schedule and developed additional features',
+      '• Tech stack: React, JavaScript, Relay, GraphQL, PHP (Hack), Python, Mercurial.'
+    ]
+  },
+  {
+    role: 'Software Development Engineer Intern',
     image: aws,
-    employer: 'Amazon Web Services (AWS) · Internship',
+    employer: 'Amazon Web Services (AWS)',
     date: 'June 2022 - September 2022 · 4 mos',
     description: [
-      'Built a self-service solution for cloning dependency graphs for AWS products, streamlining a time-consuming, on-call process',
-      '• Differentiated cloning and database work across multiple AWS Lambda functions using AWS SQS for optimal speed and scale',
-      '• Developed unit tests in Java to maintain 90 % code coverage across all AWS Lambda functions',
-      '• Used React, JavaScript, AWS CloudFormation, AWS Lambda, AWS SQS, DynamoDB, Java, Git'
+      '• Delivered a self-service solution for cloning dependency graphs, streamlining on-call processes',
+      '• Maintained 90% code coverage with Jest tests for the frontend in React',
+      '• Tech stack: React, JavaScript, Jest, AWS CloudFormation, AWS Lambda, AWS SQS, DynamoDB, Java, Git'
     ]
   },
   {
@@ -81,9 +104,9 @@ const workExperience = [
     ]
   },
   {
-    role: 'Software Engineer',
+    role: 'Software Engineer Intern',
     image: umich,
-    employer: 'University of Michigan · Internship',
+    employer: 'University of Michigan',
     date: 'December 2020 - May 2020 · 6 mos',
     description: [
       '• Developed scalable solutions for maintaining and expanding a large-scale database',
@@ -152,7 +175,7 @@ const projectLinks = [
     name: 'EZ Notes',
     description: (
       <div>
-        A drawing and note-taking application with over <strong>82,000</strong>{' '}
+        A drawing and note-taking application with over <strong>100,000</strong>{' '}
         downloads, <strong>57,000</strong> active users, and a{' '}
         <strong>5-star</strong> rating on the steam marketplace. It is intended
         to be used as a desktop background for Wallpaper Engine.
